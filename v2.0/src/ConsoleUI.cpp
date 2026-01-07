@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
 #include <limits>
-#include "BookManager.h"
-#include "SalesManager.h"
-#include "StatisticsManager.h"
-#include "FileManager.h"
+#include "../include/BookManager.h"
+#include "../include/SalesManager.h"
+#include "../include/StatisticsManager.h"
+#include "../include/FileManager.h"
 
 class ConsoleUI {
 private:

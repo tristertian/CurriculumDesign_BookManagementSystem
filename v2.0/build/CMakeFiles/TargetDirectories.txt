@@ -1,0 +1,3 @@
+D:/Documents/NEUQ/CurriculumDesign/BMS/v2.0/build/CMakeFiles/BookManagementSystem.dir
+D:/Documents/NEUQ/CurriculumDesign/BMS/v2.0/build/CMakeFiles/edit_cache.dir
+D:/Documents/NEUQ/CurriculumDesign/BMS/v2.0/build/CMakeFiles/rebuild_cache.dir

@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Book.h"
-#include "BookManager.h"
-#include "SalesManager.h"
-#include "StatisticsManager.h"
-#include "FileManager.h"
+#include "../include/Book.h"
+#include "../include/BookManager.h"
+#include "../include/SalesManager.h"
+#include "../include/StatisticsManager.h"
+#include "../include/FileManager.h"
 
 void testBookClass() {
     std::cout << "=== 测试 Book 类 ===" << std::endl;

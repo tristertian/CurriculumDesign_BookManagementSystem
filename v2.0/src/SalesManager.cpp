@@ -1,4 +1,4 @@
-#include "SalesManager.h"
+#include "../include/SalesManager.h"
 #include <iostream>
 #include <fstream>
 

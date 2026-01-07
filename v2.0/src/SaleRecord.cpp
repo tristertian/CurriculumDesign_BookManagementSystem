@@ -1,4 +1,4 @@
-#include "SaleRecord.h"
+#include "../include/SaleRecord.h"
 #include <chrono>
 
 // 获取当前时间字符串
