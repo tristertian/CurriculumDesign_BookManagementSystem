@@ -545,7 +545,7 @@ void MainWindow::handleStatistics() {
 
 // 处理保存数据
 void MainWindow::handleSave() {
-    if (bookManager->saveFile("data/books.dat")) {
+    if (bookManager->saveFile("../data/books.dat")) {
         showMessage("数据保存成功！\n文件位置: data/books.dat");
     } else {
         showError("数据保存失败！");
@@ -554,7 +554,7 @@ void MainWindow::handleSave() {
 
 // 处理加载数据
 void MainWindow::handleLoad() {
-    if (bookManager->loadFile("data/books.dat")) {
+    if (bookManager->loadFile("../data/books.dat")) {
         updateTable();
         showMessage("数据加载成功！\n共加载 " + 
                    std::to_string(bookManager->getBookAmount()) + " 本图书");
