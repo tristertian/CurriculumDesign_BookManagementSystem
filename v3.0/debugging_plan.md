@@ -139,17 +139,17 @@ Book book1("C++编程", "机械工业", "123", "作者1", 10, 30.0);
 
 // 测试1：正常添加
 ASSERT(manager.addBook(book1) == true);
-ASSERT(manager.getBookCount() == 1);
+ASSERT(manager.getBookAmount() == 1);
 
 // 测试2：重复ISBN添加
 Book book2("Java编程", "清华大学", "123", "作者2", 20, 40.0);
 ASSERT(manager.addBook(book2) == false); // 应该失败
-ASSERT(manager.getBookCount() == 1);
+ASSERT(manager.getBookAmount() == 1);
 
 // 测试3：添加多本图书
 Book book3("Python编程", "电子工业", "456", "作者3", 15, 35.0);
 ASSERT(manager.addBook(book3) == true);
-ASSERT(manager.getBookCount() == 2);
+ASSERT(manager.getBookAmount() == 2);
 ```
 
 #### 3.2.2 查询功能测试
@@ -200,7 +200,7 @@ ASSERT(updated->getPrice() == 35.0);
 
 // 测试删除
 ASSERT(manager.deleteBook("001") == true);
-ASSERT(manager.getBookCount() == 0);
+ASSERT(manager.getBookAmount() == 0);
 ASSERT(manager.findByISBN("001") == nullptr);
 
 // 测试删除不存在的图书
@@ -317,7 +317,7 @@ manager.addBook(Book("C++", "机工", "001", "A", 10, 30.0));
 manager.addBook(Book("Java", "清华", "002", "B", 20, 40.0));
 
 // 测试保存到文件
-ASSERT(manager.saveToFile("test_books.dat") == true);
+ASSERT(manager.saveFile("test_books.dat") == true);
 ASSERT(std::ifstream("test_books.dat").good() == true);
 ```
 
@@ -326,21 +326,21 @@ ASSERT(std::ifstream("test_books.dat").good() == true);
 BookManager manager;
 
 // 测试从文件加载
-ASSERT(manager.loadFromFile("test_books.dat") == true);
-ASSERT(manager.getBookCount() == 2);
+ASSERT(manager.loadFile("test_books.dat") == true);
+ASSERT(manager.getBookAmount() == 2);
 ASSERT(manager.findByISBN("001") != nullptr);
 ASSERT(manager.findByISBN("002") != nullptr);
 
 // 测试加载不存在的文件
 BookManager manager2;
-ASSERT(manager2.loadFromFile("nonexistent.dat") == false);
+ASSERT(manager2.loadFile("nonexistent.dat") == false);
 
 // 测试加载损坏的文件
 std::ofstream badFile("bad.dat", std::ios::binary);
 badFile << "corrupted data";
 badFile.close();
 BookManager manager3;
-ASSERT(manager3.loadFromFile("bad.dat") == false);
+ASSERT(manager3.loadFile("bad.dat") == false);
 ```
 
 ## 4. 集成测试计划
@@ -376,12 +376,12 @@ ASSERT(stats.getTotalBooks() == 2);
 ASSERT(stats.getTotalStock() == 70); // 40 + 30
 
 // 6. 保存到文件
-manager.saveToFile("integration_test.dat");
+manager.saveFile("integration_test.dat");
 
 // 7. 加载到新管理器
 BookManager manager2;
-manager2.loadFromFile("integration_test.dat");
-ASSERT(manager2.getBookCount() == 2);
+manager2.loadFile("integration_test.dat");
+ASSERT(manager2.getBookAmount() == 2);
 ASSERT(manager2.findByISBN("001")->getStock() == 40);
 ```
 
@@ -444,7 +444,7 @@ for (int i = 0; i < 100; i++) {
 
 // 测试保存性能
 auto start = std::chrono::high_resolution_clock::now();
-manager.saveToFile("perf_test.dat");
+manager.saveFile("perf_test.dat");
 auto end = std::chrono::high_resolution_clock::now();
 auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 ASSERT(duration.count() < 500); // 保存时间应小于500毫秒
@@ -452,7 +452,7 @@ ASSERT(duration.count() < 500); // 保存时间应小于500毫秒
 // 测试加载性能
 BookManager manager2;
 start = std::chrono::high_resolution_clock::now();
-manager2.loadFromFile("perf_test.dat");
+manager2.loadFile("perf_test.dat");
 end = std::chrono::high_resolution_clock::now();
 duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 ASSERT(duration.count() < 500); // 加载时间应小于500毫秒
@@ -468,7 +468,7 @@ BookManager* nullManager = nullptr;
 
 // 测试文件权限问题
 // 尝试保存到只读目录
-// manager.saveToFile("/root/test.dat"); // 应该失败
+// manager.saveFile("/root/test.dat"); // 应该失败
 
 // 测试磁盘满的情况
 // 需要模拟磁盘满的场景

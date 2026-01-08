@@ -12,7 +12,7 @@ StatisticsSystem::~StatisticsSystem() {
 
 // 获取图书总数
 size_t StatisticsSystem::getTotalBooks() const {
-    return bookManager->getBookCount();
+    return bookManager->getBookAmount();
 }
 
 // 获取总库存量

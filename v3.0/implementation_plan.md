@@ -52,8 +52,8 @@
 - **文件**: 在BookManager类中实现
 - **实现内容**:
   - 二进制文件格式设计
-  - saveToFile()方法
-  - loadFromFile()方法
+  - saveFile()方法
+  - loadFile()方法
   - 错误处理
 - **预计时间**: 2-3小时
 - **依赖**: Book类, BookManager类
@@ -139,8 +139,8 @@ cd BMS
 
 ### 步骤5: 实现文件存取
 
-1. 在BookManager中实现saveToFile()
-2. 在BookManager中实现loadFromFile()
+1. 在BookManager中实现saveFile()
+2. 在BookManager中实现loadFile()
 3. 测试文件读写
 
 ### 步骤6: 实现UI界面

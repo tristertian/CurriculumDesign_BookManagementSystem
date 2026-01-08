@@ -147,13 +147,13 @@ public:
     std::vector<Book*> sortByStock();
     
     // 获取图书数量
-    size_t getBookCount() const;
+    size_t getBookAmount() const;
     
     // 保存到文件
-    bool saveToFile(const std::string& filename) const;
+    bool saveFile(const std::string& filename) const;
     
     // 从文件加载
-    bool loadFromFile(const std::string& filename);
+    bool loadFile(const std::string& filename);
     
     // 清空所有图书
     void clear();
@@ -176,9 +176,9 @@ public:
 | getAllBooks() | 无 | vector<Book>& | 获取所有图书引用 |
 | sortByPrice() | 无 | vector<Book*> | 按价格降序排序 |
 | sortByStock() | 无 | vector<Book*> | 按库存降序排序 |
-| getBookCount() | 无 | size_t | 获取图书数量 |
-| saveToFile() | string | bool | 保存数据到文件 |
-| loadFromFile() | string | bool | 从文件加载数据 |
+| getBookAmount() | 无 | size_t | 获取图书数量 |
+| saveFile() | string | bool | 保存数据到文件 |
+| loadFile() | string | bool | 从文件加载数据 |
 | clear() | 无 | void | 清空所有图书 |
 
 ## 3. SalesSystem类设计

@@ -20,23 +20,19 @@ bool BookManager::addBook(const Book& book) {
     if (findIndex(book.getISBN()) != -1) {return false;}  // ISBN重复
     
     books.push_back(book);
-    return true;
+    return true;    // 为什么要写成布尔函数？方便执行失败时返回错误
 }
 
 // 根据ISBN查找图书(Note：已经确保ISBN具有唯一性)
 Book* BookManager::findByISBN(const std::string& isbn) {
     int index = findIndex(isbn);
-    if (index != -1) {
-        return &books[index];
-    }
+    if (index != -1) {return &books[index];}
     return nullptr;
 }
 
 const Book* BookManager::findByISBN(const std::string& isbn) const {
     int index = findIndex(isbn);
-    if (index != -1) {
-        return &books[index];
-    }
+    if (index != -1) {return &books[index];}
     return nullptr;
 }
 
@@ -106,11 +102,9 @@ std::vector<const Book*> BookManager::findByPublisher(const std::string& publish
 // 更新图书信息
 bool BookManager::updateBook(const std::string& isbn, const Book& newBook) {
     int index = findIndex(isbn);
-    if (index == -1) {
-        return false;  // 图书不存在
-    }
+    if (index == -1) {return false;}
     
-    // 如果ISBN改变，检查新的ISBN是否已存在
+    // 如果ISBN改变，要检查新的ISBN是否已存在
     if (newBook.getISBN() != isbn  &&  findIndex(newBook.getISBN()) != -1) {
         return false;  // 新的ISBN已存在
     }
@@ -122,37 +116,36 @@ bool BookManager::updateBook(const std::string& isbn, const Book& newBook) {
 // 删除图书
 bool BookManager::deleteBook(const std::string& isbn) {
     int index = findIndex(isbn);
-    if (index == -1) {
-        return false;  // 图书不存在
-    }
+    if (index == -1) {return false;} // 图书不存在
     
-    books.erase(books.begin() + index);
+    books.erase(books.begin() + index); // vector库函数
     return true;
 }
 
+
 // 获取所有图书
-std::vector<Book>& BookManager::getAllBooks() {
-    return books;
-}
+std::vector<Book>& BookManager::getAllBooks()             {return books;}
+const std::vector<Book>& BookManager::getAllBooks() const {return books;}
+// 图书总数
+size_t BookManager::getBookAmount() const {return books.size();}
+// 清空所有图书
+void BookManager::clear() {books.clear();}
 
-const std::vector<Book>& BookManager::getAllBooks() const {
-    return books;
-}
 
-// 按价格排序（降序）
+// 按价格排序（decreasing）
 std::vector<Book*> BookManager::sortByPrice() {
     std::vector<Book*> result;
     for (auto& book : books) {
         result.push_back(&book);
-    }
+    }   // 复制一个临时数组
     
     std::sort(result.begin(), result.end(), 
-              [](Book* a, Book* b) { return a->getPrice() > b->getPrice(); });
+    [](Book* a, Book* b)->bool{return a->getPrice() > b->getPrice();});    // STAR: lambda表达式
     
     return result;
 }
 
-// 按库存量排序（降序）
+// 按库存量排序（decreasing）
 std::vector<Book*> BookManager::sortByStock() {
     std::vector<Book*> result;
     for (auto& book : books) {
@@ -160,35 +153,24 @@ std::vector<Book*> BookManager::sortByStock() {
     }
     
     std::sort(result.begin(), result.end(), 
-              [](Book* a, Book* b) { return a->getStock() > b->getStock(); });
+    [](Book* a, Book* b)->bool{return a->getStock() > b->getStock();});
     
     return result;
 }
 
-// 获取图书数量
-size_t BookManager::getBookCount() const {
-    return books.size();
-}
-
 // 保存到文件
-bool BookManager::saveToFile(const std::string& filename) const {
+bool BookManager::saveFile(const std::string& filename){
     std::ofstream file(filename, std::ios::binary);
-    if (!file) {
-        return false;
-    }
-    
+
+    if (!file) {return false;}  // 失败1
     try {
-        // 写入文件头
-        const char* magic = "BMS\0";
-        file.write(magic, 4);
-        
-        // 写入版本号
-        int version = 1;
-        file.write(reinterpret_cast<const char*>(&version), sizeof(version));
-        
-        // 写入图书数量
-        int count = static_cast<int>(books.size());
-        file.write(reinterpret_cast<const char*>(&count), sizeof(count));
+        // const char* magic = "BMS\0";    // 文件头
+        // file.write(magic, 4);
+        // int version = 1;                // 版本号
+        // file.write(reinterpret_cast<const char*>(&version), sizeof(version));
+
+        int amount = static_cast<int>(books.size());    // 图书总数
+        file.write(reinterpret_cast<const char*>(&amount), sizeof(amount));
         
         // 写入每本图书
         for (const auto& book : books) {
@@ -196,48 +178,47 @@ bool BookManager::saveToFile(const std::string& filename) const {
         }
         
         file.close();
+
         return true;
-    } catch (...) {
+    }catch (...) {  // ...代指多种类型的异常
         if (file.is_open()) {
             file.close();
         }
-        return false;
+        return false;           // 失败2
     }
 }
 
 // 从文件加载
-bool BookManager::loadFromFile(const std::string& filename) {
+bool BookManager::loadFile(const std::string& filename) {
     std::ifstream file(filename, std::ios::binary);
-    if (!file) {
-        return false;
-    }
-    
+
+    if (!file) {return false;}
     try {
-        // 读取文件头
-        char magic[4];
-        file.read(magic, 4);
-        if (std::string(magic, 4) != "BMS\0") {
-            file.close();
-            return false;  // 文件格式错误
-        }
+        // // 读取文件头
+        // char magic[4];
+        // file.read(magic, 4);
+        // if (std::string(magic, 4) != "BMS\0") {
+        //     file.close();
+        //     return false;  // 文件格式错误
+        // }
         
-        // 读取版本号
-        int version;
-        file.read(reinterpret_cast<char*>(&version), sizeof(version));
-        if (version != 1) {
-            file.close();
-            return false;  // 版本不匹配
-        }
+        // // 读取版本号
+        // int version;
+        // file.read(reinterpret_cast<char*>(&version), sizeof(version));
+        // if (version != 1) {
+        //     file.close();
+        //     return false;  // 版本不匹配
+        // }
         
         // 读取图书数量
-        int count;
-        file.read(reinterpret_cast<char*>(&count), sizeof(count));
+        int amount;
+        file.read(reinterpret_cast<char*>(&amount), sizeof(amount));
         
         // 清空现有图书
         books.clear();
         
         // 读取每本图书
-        for (int i = 0; i < count; ++i) {
+        for (int i = 0; i < amount; ++i) {
             Book book;
             file >> book;
             books.push_back(book);
@@ -251,9 +232,4 @@ bool BookManager::loadFromFile(const std::string& filename) {
         }
         return false;
     }
-}
-
-// 清空所有图书
-void BookManager::clear() {
-    books.clear();
 }

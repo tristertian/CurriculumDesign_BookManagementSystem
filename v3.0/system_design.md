@@ -75,8 +75,8 @@ classDiagram
         +getAllBooks() vector~Book~
         +sortByPrice() vector~Book~
         +sortByStock() vector~Book~
-        +saveToFile(string) bool
-        +loadFromFile(string) bool
+        +saveFile(string) bool
+        +loadFile(string) bool
     }
     
     class SalesSystem {

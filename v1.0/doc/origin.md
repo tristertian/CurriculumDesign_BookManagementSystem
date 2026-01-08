@@ -4,7 +4,7 @@
 
 定义图书类，属性有：书名、出版社、ISBN号、作者、库存量、价格等信息和相关的对属性做操作的行为，完成对图书的销售、统计和图书的简单管理。
 
-要求：使用C++11面向对象编程；建议使用FLTK(FastLightToolkit)编写轻量级UI界面；STL模板限制：禁止使用std::shred_ptr及std::map，允许使用std::vector;
+要求：使用C++11面向对象编程；建议使用FLTK(FastLightToolkit)编写轻量级UI界面；
 
 ## 2、功能要求
 
