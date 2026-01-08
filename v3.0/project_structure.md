@@ -7,14 +7,14 @@ BMS/
 ├── include/                          # 头文件目录
 │   ├── Book.h                       # 图书类声明
 │   ├── BookManager.h                # 图书管理类声明
-│   ├── SalesSystem.h                # 销售系统类声明
-│   ├── StatisticsSystem.h           # 统计系统类声明
+│   ├── SaleSys.h                # 销售系统类声明
+│   ├── StatisSys.h           # 统计系统类声明
 │   └── MainWindow.h                 # 主窗口类声明
 ├── src/                             # 源文件目录
 │   ├── Book.cpp                     # 图书类实现
 │   ├── BookManager.cpp              # 图书管理类实现
-│   ├── SalesSystem.cpp              # 销售系统类实现
-│   ├── StatisticsSystem.cpp         # 统计系统类实现
+│   ├── SaleSys.cpp              # 销售系统类实现
+│   ├── StatisSys.cpp         # 统计系统类实现
 │   ├── MainWindow.cpp               # 主窗口类实现
 │   └── main.cpp                     # 程序入口
 ├── data/                            # 数据文件目录
@@ -41,13 +41,13 @@ BMS/
    - 文件存取功能
    - 排序功能
 
-3. **SalesSystem.h**
+3. **SaleSys.h**
    - 销售系统类定义
    - 购买书籍功能
    - 库存检查功能
    - 价格计算功能
 
-4. **StatisticsSystem.h**
+4. **StatisSys.h**
    - 统计系统类定义
    - 图书总数统计
    - 按不同条件排序统计
@@ -69,11 +69,11 @@ BMS/
    - 文件读写实现
    - 查询和排序算法实现
 
-3. **SalesSystem.cpp**
+3. **SaleSys.cpp**
    - 销售功能实现
    - 购买流程实现
 
-4. **StatisticsSystem.cpp**
+4. **StatisSys.cpp**
    - 统计功能实现
    - 数据分析和排序实现
 
@@ -121,7 +121,7 @@ make
 ## 开发顺序建议
 
 1. 先实现核心数据类 (Book, BookManager)
-2. 实现业务逻辑类 (SalesSystem, StatisticsSystem)
+2. 实现业务逻辑类 (SaleSys, StatisSys)
 3. 实现文件存取功能
 4. 开发UI界面
 5. 系统集成测试

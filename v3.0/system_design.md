@@ -79,16 +79,16 @@ classDiagram
         +loadFile(string) bool
     }
     
-    class SalesSystem {
+    class SaleSys {
         -BookManager* bookManager
-        +SalesSystem(BookManager*)
+        +SaleSys(BookManager*)
         +purchaseBook(string, int) bool
-        +calculateTotal(double, int) double
+        +consume(double, int) double
     }
     
-    class StatisticsSystem {
+    class StatisSys {
         -BookManager* bookManager
-        +StatisticsSystem(BookManager*)
+        +StatisSys(BookManager*)
         +getTotalBooks() int
         +getTotalStock() int
         +getTotalValue() double
@@ -100,8 +100,8 @@ classDiagram
     
     class MainWindow {
         -BookManager* bookManager
-        -SalesSystem* salesSystem
-        -StatisticsSystem* statsSystem
+        -SaleSys* SaleSys
+        -StatisSys* statsSystem
         +MainWindow()
         +show()
         +handleAddBook()
@@ -115,11 +115,11 @@ classDiagram
     }
     
     BookManager --> Book : 管理
-    SalesSystem --> BookManager : 使用
-    StatisticsSystem --> BookManager : 使用
+    SaleSys --> BookManager : 使用
+    StatisSys --> BookManager : 使用
     MainWindow --> BookManager : 使用
-    MainWindow --> SalesSystem : 使用
-    MainWindow --> StatisticsSystem : 使用
+    MainWindow --> SaleSys : 使用
+    MainWindow --> StatisSys : 使用
 ```
 
 ## 3. 核心类设计
@@ -151,14 +151,14 @@ BMS/
 ├── include/
 │   ├── Book.h
 │   ├── BookManager.h
-│   ├── SalesSystem.h
-│   ├── StatisticsSystem.h
+│   ├── SaleSys.h
+│   ├── StatisSys.h
 │   └── MainWindow.h
 ├── src/
 │   ├── Book.cpp
 │   ├── BookManager.cpp
-│   ├── SalesSystem.cpp
-│   ├── StatisticsSystem.cpp
+│   ├── SaleSys.cpp
+│   ├── StatisSys.cpp
 │   ├── MainWindow.cpp
 │   └── main.cpp
 ├── data/
@@ -179,7 +179,7 @@ BMS/
 ## 6. 实现优先级
 
 1. 核心数据类（Book, BookManager）
-2. 业务逻辑类（SalesSystem, StatisticsSystem）
+2. 业务逻辑类（SaleSys, StatisticsSystem）
 3. 文件存取功能
 4. UI界面开发
 5. 系统集成测试

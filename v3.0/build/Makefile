@@ -200,53 +200,53 @@ src/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/MainWindow.cpp.s
 .PHONY : src/MainWindow.cpp.s
 
-src/SalesSystem.obj: src/SalesSystem.cpp.obj
-.PHONY : src/SalesSystem.obj
+src/SaleSys.obj: src/SaleSys.cpp.obj
+.PHONY : src/SaleSys.obj
 
 # target to build an object file
-src/SalesSystem.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj
-.PHONY : src/SalesSystem.cpp.obj
+src/SaleSys.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/SaleSys.cpp.obj
+.PHONY : src/SaleSys.cpp.obj
 
-src/SalesSystem.i: src/SalesSystem.cpp.i
-.PHONY : src/SalesSystem.i
+src/SaleSys.i: src/SaleSys.cpp.i
+.PHONY : src/SaleSys.i
 
 # target to preprocess a source file
-src/SalesSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/SalesSystem.cpp.i
-.PHONY : src/SalesSystem.cpp.i
+src/SaleSys.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/SaleSys.cpp.i
+.PHONY : src/SaleSys.cpp.i
 
-src/SalesSystem.s: src/SalesSystem.cpp.s
-.PHONY : src/SalesSystem.s
+src/SaleSys.s: src/SaleSys.cpp.s
+.PHONY : src/SaleSys.s
 
 # target to generate assembly for a file
-src/SalesSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/SalesSystem.cpp.s
-.PHONY : src/SalesSystem.cpp.s
+src/SaleSys.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/SaleSys.cpp.s
+.PHONY : src/SaleSys.cpp.s
 
-src/StatisticsSystem.obj: src/StatisticsSystem.cpp.obj
-.PHONY : src/StatisticsSystem.obj
+src/StatisSys.obj: src/StatisSys.cpp.obj
+.PHONY : src/StatisSys.obj
 
 # target to build an object file
-src/StatisticsSystem.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj
-.PHONY : src/StatisticsSystem.cpp.obj
+src/StatisSys.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/StatisSys.cpp.obj
+.PHONY : src/StatisSys.cpp.obj
 
-src/StatisticsSystem.i: src/StatisticsSystem.cpp.i
-.PHONY : src/StatisticsSystem.i
+src/StatisSys.i: src/StatisSys.cpp.i
+.PHONY : src/StatisSys.i
 
 # target to preprocess a source file
-src/StatisticsSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.i
-.PHONY : src/StatisticsSystem.cpp.i
+src/StatisSys.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/StatisSys.cpp.i
+.PHONY : src/StatisSys.cpp.i
 
-src/StatisticsSystem.s: src/StatisticsSystem.cpp.s
-.PHONY : src/StatisticsSystem.s
+src/StatisSys.s: src/StatisSys.cpp.s
+.PHONY : src/StatisSys.s
 
 # target to generate assembly for a file
-src/StatisticsSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.s
-.PHONY : src/StatisticsSystem.cpp.s
+src/StatisSys.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BMS.dir\build.make CMakeFiles/BMS.dir/src/StatisSys.cpp.s
+.PHONY : src/StatisSys.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -290,12 +290,12 @@ help:
 	@echo ... src/MainWindow.obj
 	@echo ... src/MainWindow.i
 	@echo ... src/MainWindow.s
-	@echo ... src/SalesSystem.obj
-	@echo ... src/SalesSystem.i
-	@echo ... src/SalesSystem.s
-	@echo ... src/StatisticsSystem.obj
-	@echo ... src/StatisticsSystem.i
-	@echo ... src/StatisticsSystem.s
+	@echo ... src/SaleSys.obj
+	@echo ... src/SaleSys.i
+	@echo ... src/SaleSys.s
+	@echo ... src/StatisSys.obj
+	@echo ... src/StatisSys.i
+	@echo ... src/StatisSys.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

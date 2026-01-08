@@ -1,22 +1,22 @@
-#ifndef SALESSYSTEM_H
-#define SALESSYSTEM_H
+#ifndef SALESYS_H
+#define SALESYS_H
 
 #include <string>
 #include "BookManager.h"
 
-class SalesSystem {
+class SaleSys {
 private:
     BookManager* bookManager;  // 图书管理器指针
     
     // 计算总价
-    double calculateTotal(double price, int quantity) const;
+    double consume(double price, int quantity) const;
 
 public:
     // 构造函数
-    explicit SalesSystem(BookManager* manager);
+    explicit SaleSys(BookManager* manager);
     
     // 析构函数
-    ~SalesSystem();
+    ~SaleSys();
     
     // 购买图书
     bool purchaseBook(const std::string& isbn, int quantity);

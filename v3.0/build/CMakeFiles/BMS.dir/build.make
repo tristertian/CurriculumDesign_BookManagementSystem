@@ -101,35 +101,35 @@ CMakeFiles/BMS.dir/src/BookManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/BookManager.cpp.s"
 	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\BookManager.cpp -o CMakeFiles\BMS.dir\src\BookManager.cpp.s
 
-CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj: CMakeFiles/BMS.dir/flags.make
-CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
-CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj: D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/SalesSystem.cpp
-CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj: CMakeFiles/BMS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj -MF CMakeFiles\BMS.dir\src\SalesSystem.cpp.obj.d -o CMakeFiles\BMS.dir\src\SalesSystem.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SalesSystem.cpp
+CMakeFiles/BMS.dir/src/SaleSys.cpp.obj: CMakeFiles/BMS.dir/flags.make
+CMakeFiles/BMS.dir/src/SaleSys.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
+CMakeFiles/BMS.dir/src/SaleSys.cpp.obj: D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/SaleSys.cpp
+CMakeFiles/BMS.dir/src/SaleSys.cpp.obj: CMakeFiles/BMS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BMS.dir/src/SaleSys.cpp.obj"
+	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/SaleSys.cpp.obj -MF CMakeFiles\BMS.dir\src\SaleSys.cpp.obj.d -o CMakeFiles\BMS.dir\src\SaleSys.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SaleSys.cpp
 
-CMakeFiles/BMS.dir/src/SalesSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BMS.dir/src/SalesSystem.cpp.i"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SalesSystem.cpp > CMakeFiles\BMS.dir\src\SalesSystem.cpp.i
+CMakeFiles/BMS.dir/src/SaleSys.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BMS.dir/src/SaleSys.cpp.i"
+	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SaleSys.cpp > CMakeFiles\BMS.dir\src\SaleSys.cpp.i
 
-CMakeFiles/BMS.dir/src/SalesSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/SalesSystem.cpp.s"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SalesSystem.cpp -o CMakeFiles\BMS.dir\src\SalesSystem.cpp.s
+CMakeFiles/BMS.dir/src/SaleSys.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/SaleSys.cpp.s"
+	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SaleSys.cpp -o CMakeFiles\BMS.dir\src\SaleSys.cpp.s
 
-CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj: CMakeFiles/BMS.dir/flags.make
-CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
-CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj: D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/StatisticsSystem.cpp
-CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj: CMakeFiles/BMS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj -MF CMakeFiles\BMS.dir\src\StatisticsSystem.cpp.obj.d -o CMakeFiles\BMS.dir\src\StatisticsSystem.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisticsSystem.cpp
+CMakeFiles/BMS.dir/src/StatisSys.cpp.obj: CMakeFiles/BMS.dir/flags.make
+CMakeFiles/BMS.dir/src/StatisSys.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
+CMakeFiles/BMS.dir/src/StatisSys.cpp.obj: D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/StatisSys.cpp
+CMakeFiles/BMS.dir/src/StatisSys.cpp.obj: CMakeFiles/BMS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BMS.dir/src/StatisSys.cpp.obj"
+	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/StatisSys.cpp.obj -MF CMakeFiles\BMS.dir\src\StatisSys.cpp.obj.d -o CMakeFiles\BMS.dir\src\StatisSys.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisSys.cpp
 
-CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.i"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisticsSystem.cpp > CMakeFiles\BMS.dir\src\StatisticsSystem.cpp.i
+CMakeFiles/BMS.dir/src/StatisSys.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BMS.dir/src/StatisSys.cpp.i"
+	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisSys.cpp > CMakeFiles\BMS.dir\src\StatisSys.cpp.i
 
-CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.s"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisticsSystem.cpp -o CMakeFiles\BMS.dir\src\StatisticsSystem.cpp.s
+CMakeFiles/BMS.dir/src/StatisSys.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/StatisSys.cpp.s"
+	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisSys.cpp -o CMakeFiles\BMS.dir\src\StatisSys.cpp.s
 
 CMakeFiles/BMS.dir/src/MainWindow.cpp.obj: CMakeFiles/BMS.dir/flags.make
 CMakeFiles/BMS.dir/src/MainWindow.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
@@ -165,8 +165,8 @@ CMakeFiles/BMS.dir/src/main.cpp.s: cmake_force
 BMS_OBJECTS = \
 "CMakeFiles/BMS.dir/src/Book.cpp.obj" \
 "CMakeFiles/BMS.dir/src/BookManager.cpp.obj" \
-"CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj" \
-"CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj" \
+"CMakeFiles/BMS.dir/src/SaleSys.cpp.obj" \
+"CMakeFiles/BMS.dir/src/StatisSys.cpp.obj" \
 "CMakeFiles/BMS.dir/src/MainWindow.cpp.obj" \
 "CMakeFiles/BMS.dir/src/main.cpp.obj"
 
@@ -175,8 +175,8 @@ BMS_EXTERNAL_OBJECTS =
 
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/Book.cpp.obj
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/BookManager.cpp.obj
-D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj
-D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj
+D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/SaleSys.cpp.obj
+D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/StatisSys.cpp.obj
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/MainWindow.cpp.obj
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/main.cpp.obj
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/build.make

@@ -27,7 +27,7 @@
 ### 第二阶段：业务逻辑类实现（优先级：高）
 
 #### 2.1 SalesSystem类实现
-- **文件**: [`include/SalesSystem.h`](include/SalesSystem.h), [`src/SalesSystem.cpp`](src/SalesSystem.cpp)
+- **文件**: [`include/SaleSys.h`](include/SaleSys.h), [`src/SaleSys.cpp`](src/SaleSys.cpp)
 - **实现内容**:
   - 购买图书流程
   - 库存检查
@@ -36,7 +36,7 @@
 - **依赖**: BookManager类
 
 #### 2.2 StatisticsSystem类实现
-- **文件**: [`include/StatisticsSystem.h`](include/StatisticsSystem.h), [`src/StatisticsSystem.cpp`](src/StatisticsSystem.cpp)
+- **文件**: [`include/StatisSys.h`](include/StatisSys.h), [`src/StatisSys.cpp`](src/StatisSys.cpp)
 - **实现内容**:
   - 图书总数统计
   - 库存总量统计

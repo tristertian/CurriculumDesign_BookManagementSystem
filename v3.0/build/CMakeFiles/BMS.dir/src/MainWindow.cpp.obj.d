@@ -662,8 +662,8 @@ CMakeFiles/BMS.dir/src/MainWindow.cpp.obj: \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__locale_dir/wstring_convert.h \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/cstdarg \
   D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/../include/Book.h \
-  D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/../include/SalesSystem.h \
-  D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/../include/StatisticsSystem.h \
+  D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/../include/SaleSys.h \
+  D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/../include/StatisSys.h \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/FL/fl_ask.H \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/sstream \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__ostream/basic_ostream.h \

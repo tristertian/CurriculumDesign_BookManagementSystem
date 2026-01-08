@@ -96,8 +96,8 @@ MainWindow::MainWindow(int width, int height, const char* title)
     
     // 创建系统组件
     bookManager = new BookManager();
-    salesSystem = new SalesSystem(bookManager);
-    statsSystem = new StatisticsSystem(bookManager);
+    SaleSys = new SaleSys(bookManager);
+    statsSystem = new StatisSys(bookManager);
     
     // 设置UI
     setupUI();
@@ -110,7 +110,7 @@ MainWindow::MainWindow(int width, int height, const char* title)
 
 // 析构函数
 MainWindow::~MainWindow() {
-    delete salesSystem;
+    delete SaleSys;
     delete statsSystem;
     delete bookManager;
 }
@@ -482,10 +482,10 @@ void MainWindow::handlePurchaseBook() {
         return;
     }
     
-    if (salesSystem->purchaseBook(isbn, quantity)) {
+    if (SaleSys->purchaseBook(isbn, quantity)) {
         updateTable();
         
-        double total = salesSystem->getTotalPrice(isbn, quantity);
+        double total = SaleSys->getTotalPrice(isbn, quantity);
         std::stringstream ss;
         ss << "购买成功！\nISBN: " << isbn << "\n数量: " << quantity 
            << "\n总价: ¥" << std::fixed << std::setprecision(2) << total;

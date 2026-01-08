@@ -233,7 +233,7 @@ ASSERT(sortedByStock[2]->getStock() == 10); // 最小库存
 ```cpp
 BookManager manager;
 manager.addBook(Book("C++", "机工", "001", "A", 10, 30.0));
-SalesSystem sales(&manager);
+SaleSys sales(&manager);
 
 // 测试1：正常购买
 ASSERT(sales.purchaseBook("001", 5) == true);
@@ -255,7 +255,7 @@ ASSERT(manager.findByISBN("001")->getStock() == 5); // 库存不变
 ```cpp
 BookManager manager;
 manager.addBook(Book("C++", "机工", "001", "A", 10, 30.0));
-SalesSystem sales(&manager);
+SaleSys sales(&manager);
 
 // 测试总价计算
 ASSERT(sales.getTotalPrice("001", 3) == 90.0);
@@ -274,7 +274,7 @@ BookManager manager;
 manager.addBook(Book("Book1", "Pub1", "001", "A", 10, 30.0));
 manager.addBook(Book("Book2", "Pub2", "002", "B", 20, 40.0));
 manager.addBook(Book("Book3", "Pub1", "003", "A", 15, 35.0));
-StatisticsSystem stats(&manager);
+StatisSys stats(&manager);
 
 // 测试图书总数
 ASSERT(stats.getTotalBooks() == 3);
@@ -352,8 +352,8 @@ ASSERT(manager3.loadFile("bad.dat") == false);
 // 场景：添加图书 -> 查询 -> 修改 -> 购买 -> 统计 -> 保存 -> 加载
 
 BookManager manager;
-SalesSystem sales(&manager);
-StatisticsSystem stats(&manager);
+SaleSys sales(&manager);
+StatisSys stats(&manager);
 
 // 1. 添加图书
 manager.addBook(Book("C++", "机工", "001", "A", 50, 45.0));
@@ -464,7 +464,7 @@ ASSERT(duration.count() < 500); // 加载时间应小于500毫秒
 ```cpp
 // 测试空指针处理
 BookManager* nullManager = nullptr;
-// SalesSystem sales(nullManager); // 应该抛出异常或处理
+// SaleSys sales(nullManager); // 应该抛出异常或处理
 
 // 测试文件权限问题
 // 尝试保存到只读目录
@@ -482,7 +482,7 @@ BookManager* nullManager = nullptr;
 // 测试库存为0的情况
 BookManager manager;
 manager.addBook(Book("Book", "Pub", "001", "A", 0, 30.0));
-SalesSystem sales(&manager);
+SaleSys sales(&manager);
 ASSERT(sales.purchaseBook("001", 1) == false);
 
 // 测试价格为0的情况

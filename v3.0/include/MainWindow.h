@@ -11,15 +11,15 @@
 #include <FL/Fl_Box.H>
 #include <string>
 #include "BookManager.h"
-#include "SalesSystem.h"
-#include "StatisticsSystem.h"
+#include "SaleSys.h"
+#include "StatisSys.h"
 
 class MainWindow : public Fl_Window {
 private:
     // 系统组件
     BookManager* bookManager;
-    SalesSystem* salesSystem;
-    StatisticsSystem* statsSystem;
+    SaleSys* SaleSys;
+    StatisSys* statsSystem;
     
     // UI组件
     Fl_Button* addButton;

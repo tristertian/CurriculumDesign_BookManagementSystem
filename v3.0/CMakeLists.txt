@@ -15,8 +15,8 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 set(SOURCES
     src/Book.cpp
     src/BookManager.cpp
-    src/SalesSystem.cpp
-    src/StatisticsSystem.cpp
+    src/SaleSys.cpp
+    src/StatisSys.cpp
     src/MainWindow.cpp
     src/main.cpp
 )

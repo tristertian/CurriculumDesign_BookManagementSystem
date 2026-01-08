@@ -1,6 +1,6 @@
-CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj: \
-  D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/SalesSystem.cpp \
-  D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/../include/SalesSystem.h \
+CMakeFiles/BMS.dir/src/SaleSys.cpp.obj: \
+  D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/SaleSys.cpp \
+  D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/../include/SaleSys.h \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/string \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__algorithm/max.h \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__algorithm/comp.h \

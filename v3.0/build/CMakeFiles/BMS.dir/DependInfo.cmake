@@ -11,8 +11,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/Book.cpp" "CMakeFiles/BMS.dir/src/Book.cpp.obj" "gcc" "CMakeFiles/BMS.dir/src/Book.cpp.obj.d"
   "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/BookManager.cpp" "CMakeFiles/BMS.dir/src/BookManager.cpp.obj" "gcc" "CMakeFiles/BMS.dir/src/BookManager.cpp.obj.d"
   "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/MainWindow.cpp" "CMakeFiles/BMS.dir/src/MainWindow.cpp.obj" "gcc" "CMakeFiles/BMS.dir/src/MainWindow.cpp.obj.d"
-  "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/SalesSystem.cpp" "CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj" "gcc" "CMakeFiles/BMS.dir/src/SalesSystem.cpp.obj.d"
-  "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/StatisticsSystem.cpp" "CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj" "gcc" "CMakeFiles/BMS.dir/src/StatisticsSystem.cpp.obj.d"
+  "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/SaleSys.cpp" "CMakeFiles/BMS.dir/src/SaleSys.cpp.obj" "gcc" "CMakeFiles/BMS.dir/src/SaleSys.cpp.obj.d"
+  "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/StatisSys.cpp" "CMakeFiles/BMS.dir/src/StatisSys.cpp.obj" "gcc" "CMakeFiles/BMS.dir/src/StatisSys.cpp.obj.d"
   "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/main.cpp" "CMakeFiles/BMS.dir/src/main.cpp.obj" "gcc" "CMakeFiles/BMS.dir/src/main.cpp.obj.d"
   )
 

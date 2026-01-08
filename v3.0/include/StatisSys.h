@@ -1,20 +1,20 @@
-#ifndef STATISTICSSYSTEM_H
-#define STATISTICSSYSTEM_H
+#ifndef STATISSYS_H
+#define STATISSYS_H
 
 #include <vector>
 #include <string>
 #include "BookManager.h"
 
-class StatisticsSystem {
+class StatisSys {
 private:
     BookManager* bookManager;  // 图书管理器指针
 
 public:
     // 构造函数
-    explicit StatisticsSystem(BookManager* manager);
+    explicit StatisSys(BookManager* manager);
     
     // 析构函数
-    ~StatisticsSystem();
+    ~StatisSys();
     
     // 获取图书总数
     size_t getTotalBooks() const;

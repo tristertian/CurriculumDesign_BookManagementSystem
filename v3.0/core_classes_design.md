@@ -191,19 +191,19 @@ public:
 #include <string>
 #include "BookManager.h"
 
-class SalesSystem {
+class SaleSys {
 private:
     BookManager* bookManager;  // 图书管理器指针
     
     // 计算总价
-    double calculateTotal(double price, int quantity) const;
+    double consume(double price, int quantity) const;
 
 public:
     // 构造函数
-    explicit SalesSystem(BookManager* manager);
+    explicit SaleSys(BookManager* manager);
     
     // 析构函数
-    ~SalesSystem();
+    ~SaleSys();
     
     // 购买图书
     bool purchaseBook(const std::string& isbn, int quantity);
@@ -241,16 +241,16 @@ public:
 #include <string>
 #include "BookManager.h"
 
-class StatisticsSystem {
+class StatisSys {
 private:
     BookManager* bookManager;  // 图书管理器指针
 
 public:
     // 构造函数
-    explicit StatisticsSystem(BookManager* manager);
+    explicit StatisSys(BookManager* manager);
     
     // 析构函数
-    ~StatisticsSystem();
+    ~StatisSys();
     
     // 获取图书总数
     size_t getTotalBooks() const;
@@ -315,15 +315,15 @@ public:
 #include <FL/Fl_Text_Buffer.H>
 #include <FL/Fl_Table_Row.H>
 #include "BookManager.h"
-#include "SalesSystem.h"
-#include "StatisticsSystem.h"
+#include "SaleSys.h"
+#include "StatisSys.h"
 
 class MainWindow : public Fl_Window {
 private:
     // 系统组件
     BookManager* bookManager;
-    SalesSystem* salesSystem;
-    StatisticsSystem* statsSystem;
+    SaleSys* SaleSys;
+    StatisSys* statsSystem;
     
     // UI组件
     Fl_Button* addButton;
