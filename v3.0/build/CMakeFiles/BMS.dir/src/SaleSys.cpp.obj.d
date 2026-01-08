@@ -623,40 +623,4 @@ CMakeFiles/BMS.dir/src/SaleSys.cpp.obj: \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include/__stdarg_va_arg.h \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include/__stdarg___va_copy.h \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include/__stdarg_va_copy.h \
-  D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/../include/Book.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/iostream \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/istream \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__ostream/basic_ostream.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__ostream/put_character_sequence.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/bitset \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__type_traits/is_char_like_type.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/ostream \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/format \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/queue \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__fwd/deque.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__fwd/queue.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/deque \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/functional \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/binary_negate.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/bind.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/binder1st.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/binder2nd.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/mem_fn.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/mem_fun_ref.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/pointer_to_binary_function.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/pointer_to_unary_function.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/unary_negate.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/function.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__type_traits/strip_signature.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/unordered_map \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__functional/is_transparent.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__hash_table \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__new/launder.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__type_traits/can_extract_key.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__type_traits/remove_const_ref.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__iterator/erase_if_container.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__iterator/ranges_iterator_traits.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__node_handle \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/stack \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__fwd/stack.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/print
+  D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/../include/Book.h

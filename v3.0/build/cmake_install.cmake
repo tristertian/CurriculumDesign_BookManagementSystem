@@ -34,7 +34,7 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/llvm-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Users/86183/scoop/apps/msys2/current/clang64/bin/llvm-objdump.exe")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

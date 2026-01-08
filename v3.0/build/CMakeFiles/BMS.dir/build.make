@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\86183\scoop\apps\cmake\current\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\cmake.exe -E rm -f
+RM = C:\Users\86183\scoop\apps\cmake\current\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -76,90 +76,90 @@ CMakeFiles/BMS.dir/src/Book.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
 CMakeFiles/BMS.dir/src/Book.cpp.obj: D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/Book.cpp
 CMakeFiles/BMS.dir/src/Book.cpp.obj: CMakeFiles/BMS.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BMS.dir/src/Book.cpp.obj"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/Book.cpp.obj -MF CMakeFiles\BMS.dir\src\Book.cpp.obj.d -o CMakeFiles\BMS.dir\src\Book.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\Book.cpp
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/Book.cpp.obj -MF CMakeFiles\BMS.dir\src\Book.cpp.obj.d -o CMakeFiles\BMS.dir\src\Book.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\Book.cpp
 
 CMakeFiles/BMS.dir/src/Book.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BMS.dir/src/Book.cpp.i"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\Book.cpp > CMakeFiles\BMS.dir\src\Book.cpp.i
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\Book.cpp > CMakeFiles\BMS.dir\src\Book.cpp.i
 
 CMakeFiles/BMS.dir/src/Book.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/Book.cpp.s"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\Book.cpp -o CMakeFiles\BMS.dir\src\Book.cpp.s
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\Book.cpp -o CMakeFiles\BMS.dir\src\Book.cpp.s
 
 CMakeFiles/BMS.dir/src/BookManager.cpp.obj: CMakeFiles/BMS.dir/flags.make
 CMakeFiles/BMS.dir/src/BookManager.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
 CMakeFiles/BMS.dir/src/BookManager.cpp.obj: D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/BookManager.cpp
 CMakeFiles/BMS.dir/src/BookManager.cpp.obj: CMakeFiles/BMS.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BMS.dir/src/BookManager.cpp.obj"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/BookManager.cpp.obj -MF CMakeFiles\BMS.dir\src\BookManager.cpp.obj.d -o CMakeFiles\BMS.dir\src\BookManager.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\BookManager.cpp
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/BookManager.cpp.obj -MF CMakeFiles\BMS.dir\src\BookManager.cpp.obj.d -o CMakeFiles\BMS.dir\src\BookManager.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\BookManager.cpp
 
 CMakeFiles/BMS.dir/src/BookManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BMS.dir/src/BookManager.cpp.i"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\BookManager.cpp > CMakeFiles\BMS.dir\src\BookManager.cpp.i
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\BookManager.cpp > CMakeFiles\BMS.dir\src\BookManager.cpp.i
 
 CMakeFiles/BMS.dir/src/BookManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/BookManager.cpp.s"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\BookManager.cpp -o CMakeFiles\BMS.dir\src\BookManager.cpp.s
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\BookManager.cpp -o CMakeFiles\BMS.dir\src\BookManager.cpp.s
 
 CMakeFiles/BMS.dir/src/SaleSys.cpp.obj: CMakeFiles/BMS.dir/flags.make
 CMakeFiles/BMS.dir/src/SaleSys.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
 CMakeFiles/BMS.dir/src/SaleSys.cpp.obj: D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/SaleSys.cpp
 CMakeFiles/BMS.dir/src/SaleSys.cpp.obj: CMakeFiles/BMS.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BMS.dir/src/SaleSys.cpp.obj"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/SaleSys.cpp.obj -MF CMakeFiles\BMS.dir\src\SaleSys.cpp.obj.d -o CMakeFiles\BMS.dir\src\SaleSys.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SaleSys.cpp
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/SaleSys.cpp.obj -MF CMakeFiles\BMS.dir\src\SaleSys.cpp.obj.d -o CMakeFiles\BMS.dir\src\SaleSys.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SaleSys.cpp
 
 CMakeFiles/BMS.dir/src/SaleSys.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BMS.dir/src/SaleSys.cpp.i"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SaleSys.cpp > CMakeFiles\BMS.dir\src\SaleSys.cpp.i
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SaleSys.cpp > CMakeFiles\BMS.dir\src\SaleSys.cpp.i
 
 CMakeFiles/BMS.dir/src/SaleSys.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/SaleSys.cpp.s"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SaleSys.cpp -o CMakeFiles\BMS.dir\src\SaleSys.cpp.s
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\SaleSys.cpp -o CMakeFiles\BMS.dir\src\SaleSys.cpp.s
 
 CMakeFiles/BMS.dir/src/StatisSys.cpp.obj: CMakeFiles/BMS.dir/flags.make
 CMakeFiles/BMS.dir/src/StatisSys.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
 CMakeFiles/BMS.dir/src/StatisSys.cpp.obj: D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/StatisSys.cpp
 CMakeFiles/BMS.dir/src/StatisSys.cpp.obj: CMakeFiles/BMS.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BMS.dir/src/StatisSys.cpp.obj"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/StatisSys.cpp.obj -MF CMakeFiles\BMS.dir\src\StatisSys.cpp.obj.d -o CMakeFiles\BMS.dir\src\StatisSys.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisSys.cpp
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/StatisSys.cpp.obj -MF CMakeFiles\BMS.dir\src\StatisSys.cpp.obj.d -o CMakeFiles\BMS.dir\src\StatisSys.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisSys.cpp
 
 CMakeFiles/BMS.dir/src/StatisSys.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BMS.dir/src/StatisSys.cpp.i"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisSys.cpp > CMakeFiles\BMS.dir\src\StatisSys.cpp.i
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisSys.cpp > CMakeFiles\BMS.dir\src\StatisSys.cpp.i
 
 CMakeFiles/BMS.dir/src/StatisSys.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/StatisSys.cpp.s"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisSys.cpp -o CMakeFiles\BMS.dir\src\StatisSys.cpp.s
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\StatisSys.cpp -o CMakeFiles\BMS.dir\src\StatisSys.cpp.s
 
 CMakeFiles/BMS.dir/src/MainWindow.cpp.obj: CMakeFiles/BMS.dir/flags.make
 CMakeFiles/BMS.dir/src/MainWindow.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
 CMakeFiles/BMS.dir/src/MainWindow.cpp.obj: D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/MainWindow.cpp
 CMakeFiles/BMS.dir/src/MainWindow.cpp.obj: CMakeFiles/BMS.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BMS.dir/src/MainWindow.cpp.obj"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/MainWindow.cpp.obj -MF CMakeFiles\BMS.dir\src\MainWindow.cpp.obj.d -o CMakeFiles\BMS.dir\src\MainWindow.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\MainWindow.cpp
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/MainWindow.cpp.obj -MF CMakeFiles\BMS.dir\src\MainWindow.cpp.obj.d -o CMakeFiles\BMS.dir\src\MainWindow.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\MainWindow.cpp
 
 CMakeFiles/BMS.dir/src/MainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BMS.dir/src/MainWindow.cpp.i"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\MainWindow.cpp > CMakeFiles\BMS.dir\src\MainWindow.cpp.i
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\MainWindow.cpp > CMakeFiles\BMS.dir\src\MainWindow.cpp.i
 
 CMakeFiles/BMS.dir/src/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/MainWindow.cpp.s"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\MainWindow.cpp -o CMakeFiles\BMS.dir\src\MainWindow.cpp.s
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\MainWindow.cpp -o CMakeFiles\BMS.dir\src\MainWindow.cpp.s
 
 CMakeFiles/BMS.dir/src/main.cpp.obj: CMakeFiles/BMS.dir/flags.make
 CMakeFiles/BMS.dir/src/main.cpp.obj: CMakeFiles/BMS.dir/includes_CXX.rsp
 CMakeFiles/BMS.dir/src/main.cpp.obj: D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/src/main.cpp
 CMakeFiles/BMS.dir/src/main.cpp.obj: CMakeFiles/BMS.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/BMS.dir/src/main.cpp.obj"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/main.cpp.obj -MF CMakeFiles\BMS.dir\src\main.cpp.obj.d -o CMakeFiles\BMS.dir\src\main.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\main.cpp
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BMS.dir/src/main.cpp.obj -MF CMakeFiles\BMS.dir\src\main.cpp.obj.d -o CMakeFiles\BMS.dir\src\main.cpp.obj -c D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\main.cpp
 
 CMakeFiles/BMS.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BMS.dir/src/main.cpp.i"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\main.cpp > CMakeFiles\BMS.dir\src\main.cpp.i
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\main.cpp > CMakeFiles\BMS.dir\src\main.cpp.i
 
 CMakeFiles/BMS.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BMS.dir/src/main.cpp.s"
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\main.cpp -o CMakeFiles\BMS.dir\src\main.cpp.s
+	C:\Users\86183\scoop\apps\msys2\current\clang64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\src\main.cpp -o CMakeFiles\BMS.dir\src\main.cpp.s
 
 # Object files for target BMS
 BMS_OBJECTS = \
@@ -180,10 +180,10 @@ D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/MainWindow.cpp.obj
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/src/main.cpp.obj
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/build.make
-D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/libfltk_images.dll.a
-D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/libfltk_forms.dll.a
-D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/libfltk_gl.dll.a
-D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/libfltk.dll.a
+D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: C:/Users/86183/scoop/apps/msys2/2025-12-13/ucrt64/lib/libfltk_images.dll.a
+D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: C:/Users/86183/scoop/apps/msys2/2025-12-13/ucrt64/lib/libfltk_forms.dll.a
+D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: C:/Users/86183/scoop/apps/msys2/2025-12-13/ucrt64/lib/libfltk_gl.dll.a
+D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: C:/Users/86183/scoop/apps/msys2/2025-12-13/ucrt64/lib/libfltk.dll.a
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/linkLibs.rsp
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/objects1.rsp
 D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/bin/BMS.exe: CMakeFiles/BMS.dir/link.txt

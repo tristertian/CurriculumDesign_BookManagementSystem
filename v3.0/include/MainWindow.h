@@ -79,10 +79,7 @@ private:
     static void onTableContext(Fl_Widget* w, void* data);
 
 public:
-    // 构造函数
     MainWindow(int width, int height, const char* title);
-    
-    // 析构函数
     ~MainWindow();
     
     // 显示窗口

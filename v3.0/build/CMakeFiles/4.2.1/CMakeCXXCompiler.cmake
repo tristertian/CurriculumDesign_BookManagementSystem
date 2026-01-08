@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/c++.exe")
+set(CMAKE_CXX_COMPILER "C:/Users/86183/scoop/apps/msys2/current/clang64/bin/c++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "Clang")
 set(CMAKE_CXX_COMPILER_VERSION "21.1.8")
@@ -25,11 +25,11 @@ set(CMAKE_CXX_COMPILER_ARCHITECTURE_ID "x86_64")
 
 
 
-set(CMAKE_AR "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/llvm-ar.exe")
+set(CMAKE_AR "C:/Users/86183/scoop/apps/msys2/current/clang64/bin/llvm-ar.exe")
 set(CMAKE_CXX_COMPILER_AR "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/llvm-ar.exe")
-set(CMAKE_RANLIB "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/llvm-ranlib.exe")
+set(CMAKE_RANLIB "C:/Users/86183/scoop/apps/msys2/current/clang64/bin/llvm-ranlib.exe")
 set(CMAKE_CXX_COMPILER_RANLIB "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/llvm-ranlib.exe")
-set(CMAKE_LINKER "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld.exe")
+set(CMAKE_LINKER "C:/Users/86183/scoop/apps/msys2/current/clang64/bin/ld.lld.exe")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_CXX_COMPILER_LINKER "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld")

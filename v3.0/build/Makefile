@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\86183\scoop\apps\cmake\current\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\cmake.exe -E rm -f
+RM = C:\Users\86183\scoop\apps\cmake\current\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -66,8 +66,8 @@ CMAKE_BINARY_DIR = D:\Documents\NEUQ\CurriculumDesign\BMS\v3.0\build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
+	C:\Users\86183\scoop\apps\cmake\current\bin\cmake-gui.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	C:\Users\86183\scoop\apps\msys2\2025-12-13\clang64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\86183\scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
