@@ -3,25 +3,9 @@
 #include <fstream>
 #include <iostream>
 
-// 构造函数
-BookManager::BookManager() {
-}
+BookManager::BookManager() {}
+BookManager::~BookManager() {}
 
-// 析构函数
-BookManager::~BookManager() {
-}
-
-// 检查ISBN是否已存在
-bool BookManager::isISBNExists(const std::string& isbn) const {
-    for (const auto& book : books) {
-        if (book.getISBN() == isbn) {
-            return true;
-        }
-    }
-    return false;
-}
-
-// 查找图书索引
 int BookManager::findBookIndex(const std::string& isbn) const {
     for (size_t i = 0; i < books.size(); ++i) {
         if (books[i].getISBN() == isbn) {
@@ -31,10 +15,14 @@ int BookManager::findBookIndex(const std::string& isbn) const {
     return -1;
 }
 
+bool BookManager::is_ISBNExists(const std::string& isbn) const {
+    return findBookIndex(isbn) != -1;
+}
+
 // 添加图书
 bool BookManager::addBook(const Book& book) {
     // 检查ISBN是否已存在
-    if (isISBNExists(book.getISBN())) {
+    if (is_ISBNExists(book.getISBN())) {
         return false;  // ISBN重复，添加失败
     }
     
@@ -61,65 +49,65 @@ const Book* BookManager::findByISBN(const std::string& isbn) const {
 
 // 根据书名查找图书（支持模糊查询）
 std::vector<Book*> BookManager::findByTitle(const std::string& title) {
-    std::vector<Book*> results;
+    std::vector<Book*> result;
     for (auto& book : books) {
         if (book.getTitle().find(title) != std::string::npos) {
-            results.push_back(&book);
+            result.push_back(&book);
         }
     }
-    return results;
+    return result;
 }
 
 std::vector<const Book*> BookManager::findByTitle(const std::string& title) const {
-    std::vector<const Book*> results;
+    std::vector<const Book*> result;
     for (const auto& book : books) {
         if (book.getTitle().find(title) != std::string::npos) {
-            results.push_back(&book);
+            result.push_back(&book);
         }
     }
-    return results;
+    return result;
 }
 
 // 根据作者查找图书
 std::vector<Book*> BookManager::findByAuthor(const std::string& author) {
-    std::vector<Book*> results;
+    std::vector<Book*> result;
     for (auto& book : books) {
         if (book.getAuthor().find(author) != std::string::npos) {
-            results.push_back(&book);
+            result.push_back(&book);
         }
     }
-    return results;
+    return result;
 }
 
 std::vector<const Book*> BookManager::findByAuthor(const std::string& author) const {
-    std::vector<const Book*> results;
+    std::vector<const Book*> result;
     for (const auto& book : books) {
         if (book.getAuthor().find(author) != std::string::npos) {
-            results.push_back(&book);
+            result.push_back(&book);
         }
     }
-    return results;
+    return result;
 }
 
 // 根据出版社查找图书
 std::vector<Book*> BookManager::findByPublisher(const std::string& publisher) {
-    std::vector<Book*> results;
+    std::vector<Book*> result;
     for (auto& book : books) {
         if (book.getPublisher().find(publisher) != std::string::npos) {
-            results.push_back(&book);
+            result.push_back(&book);
         }
     }
-    return results;
+    return result;
 }
 
 std::vector<const Book*> BookManager::findByPublisher(const std::string& publisher) const {
-    std::vector<const Book*> results;
+    std::vector<const Book*> result;
     for (const auto& book : books) {
         if (book.getPublisher().find(publisher) != std::string::npos) {
-            results.push_back(&book);
+            result.push_back(&book);
         }
     }
-    return results;
+    return result;
 }
 
 // 更新图书信息
@@ -130,7 +118,7 @@ bool BookManager::updateBook(const std::string& isbn, const Book& newBook) {
     }
     
     // 如果ISBN改变，检查新的ISBN是否已存在
-    if (newBook.getISBN() != isbn && isISBNExists(newBook.getISBN())) {
+    if (newBook.getISBN() != isbn && is_ISBNExists(newBook.getISBN())) {
         return false;  // 新的ISBN已存在
     }
     

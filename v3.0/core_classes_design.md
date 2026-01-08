@@ -99,7 +99,7 @@ private:
     std::vector<Book> books;  // 图书容器
     
     // 检查ISBN是否已存在
-    bool isISBNExists(const std::string& isbn) const;
+    bool is_ISBNExists(const std::string& isbn) const;
     
     // 查找图书索引
     int findBookIndex(const std::string& isbn) const;

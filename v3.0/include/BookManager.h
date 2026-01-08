@@ -7,13 +7,11 @@
 
 class BookManager {
 private:
-    std::vector<Book> books;  // 图书容器
-    
-    // 检查ISBN是否已存在
-    bool isISBNExists(const std::string& isbn) const;
-    
+    std::vector<Book> books;
     // 查找图书索引
     int findBookIndex(const std::string& isbn) const;
+    // 检查ISBN是否已存在
+    bool is_ISBNExists(const std::string& isbn) const;
 
 public:
     // 构造函数
@@ -29,7 +27,7 @@ public:
     Book* findByISBN(const std::string& isbn);
     const Book* findByISBN(const std::string& isbn) const;
     
-    // 根据书名查找图书（支持模糊查询）
+    // 根据书名查找图书
     std::vector<Book*> findByTitle(const std::string& title);
     std::vector<const Book*> findByTitle(const std::string& title) const;
     
@@ -66,7 +64,7 @@ public:
     // 从文件加载
     bool loadFromFile(const std::string& filename);
     
-    // 清空所有图书
+    // 额外功能：清空所有图书
     void clear();
 };
 
