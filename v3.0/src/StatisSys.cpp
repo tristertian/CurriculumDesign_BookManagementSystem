@@ -1,14 +1,7 @@
 #include "../include/StatisSys.h"
-#include <algorithm>
-#include <sstream>
 
-// 构造函数
-StatisSys::StatisSys(BookManager* manager) : bookManager(manager) {
-}
-
-// 析构函数
-StatisSys::~StatisSys() {
-}
+StatisSys::StatisSys(BookManager* manager) : bookManager(manager) {}
+StatisSys::~StatisSys() {}
 
 // 获取图书总数
 size_t StatisSys::getTotalBooks() const {
@@ -39,7 +32,6 @@ double StatisSys::getTotalValue() const {
 std::vector<Book*> StatisSys::getBooksByAuthor(const std::string& author) {
     return bookManager->findByAuthor(author);
 }
-
 // 获取特定出版社的所有图书
 std::vector<Book*> StatisSys::getBooksByPublisher(const std::string& publisher) {
     return bookManager->findByPublisher(publisher);
@@ -49,7 +41,6 @@ std::vector<Book*> StatisSys::getBooksByPublisher(const std::string& publisher) 
 std::vector<Book*> StatisSys::getBooksSortedByPrice() {
     return bookManager->sortByPrice();
 }
-
 // 按库存量统计（从大到小）
 std::vector<Book*> StatisSys::getBooksSortedByStock() {
     return bookManager->sortByStock();
@@ -77,7 +68,6 @@ Book* StatisSys::getMostExpensiveBook() {
     }
     return sortedBooks[0];
 }
-
 // 获取库存最多图书
 Book* StatisSys::getHighestStockBook() {
     auto sortedBooks = bookManager->sortByStock();

@@ -31,7 +31,7 @@ public:
     std::vector<Book*> findByPublisher(const std::string& publisher);
     std::vector<const Book*> findByPublisher(const std::string& publisher) const;
 
-    // 更改图书信息(parameter:欲修改的ISBN, 修改后的图书信息)
+    // 更改图书信息(parameter:欲修改的ISBN + 修改后的图书信息)
     bool updateBook(const std::string& isbn, const Book& newBook);
     
     // 删除

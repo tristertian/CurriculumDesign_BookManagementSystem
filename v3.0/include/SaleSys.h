@@ -6,29 +6,17 @@
 
 class SaleSys {
 private:
-    BookManager* bookManager;  // 图书管理器指针
-    
-    // 计算总价
-    double consume(double price, int quantity) const;
-
+    BookManager* bookManager;   // 使用指针，避免从头建立books对象
+    bool isSuft(const std::string& isbn, int quantity) const;   // 库存是否充足
+    double singleConsume(const std::string& isbn) const;        // 获取图书价格
 public:
-    // 构造函数
     explicit SaleSys(BookManager* manager);
-    
-    // 析构函数
     ~SaleSys();
     
     // 购买图书
     bool purchaseBook(const std::string& isbn, int quantity);
-    
-    // 检查库存是否充足
-    bool checkStock(const std::string& isbn, int quantity) const;
-    
-    // 获取图书价格
-    double getBookPrice(const std::string& isbn) const;
-    
     // 计算购买总价
-    double getTotalPrice(const std::string& isbn, int quantity) const;
+    double totalConsume(const std::string& isbn, int quantity) const;
 };
 
-#endif // SALESSYSTEM_H
+#endif

@@ -18,7 +18,7 @@ class MainWindow : public Fl_Window {
 private:
     // 系统组件
     BookManager* bookManager;
-    SaleSys* SaleSys;
+    SaleSys* saleSys;
     StatisSys* statsSystem;
     
     // UI组件
@@ -113,4 +113,4 @@ public:
     void handleLoad();
 };
 
-#endif // MAINWINDOW_H
+#endif
