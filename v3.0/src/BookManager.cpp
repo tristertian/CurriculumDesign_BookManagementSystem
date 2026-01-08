@@ -5,11 +5,11 @@
 
 BookManager::BookManager() {}
 BookManager::~BookManager() {}
-
+// 查找图书索引
 int BookManager::findIndex(const std::string& isbn) const {
-    for (size_t i = 0; i < books.size(); ++i) {
+    for (size_t i=0; i<books.size(); ++i) {
         if (books[i].getISBN() == isbn) {
-            return static_cast<int>(i);
+            return static_cast<int>(i); // 'i' is 'index'
         }
     }
     return -1;
@@ -23,7 +23,7 @@ bool BookManager::addBook(const Book& book) {
     return true;
 }
 
-// 根据ISBN查找图书
+// 根据ISBN查找图书(Note：已经确保ISBN具有唯一性)
 Book* BookManager::findByISBN(const std::string& isbn) {
     int index = findIndex(isbn);
     if (index != -1) {
@@ -40,13 +40,13 @@ const Book* BookManager::findByISBN(const std::string& isbn) const {
     return nullptr;
 }
 
-// 根据书名查找图书（支持模糊查询）
+// 根据书名查找图书
 std::vector<Book*> BookManager::findByTitle(const std::string& title) {
     std::vector<Book*> result;
     for (auto& book : books) {
         if (book.getTitle().find(title) != std::string::npos) {
             result.push_back(&book);
-        }
+        }   // STAR：模糊查询，如果有字符串片段即查询成功
     }
     return result;
 }
