@@ -6,7 +6,7 @@
 BookManager::BookManager() {}
 BookManager::~BookManager() {}
 
-int BookManager::findBookIndex(const std::string& isbn) const {
+int BookManager::findIndex(const std::string& isbn) const {
     for (size_t i = 0; i < books.size(); ++i) {
         if (books[i].getISBN() == isbn) {
             return static_cast<int>(i);
@@ -15,16 +15,9 @@ int BookManager::findBookIndex(const std::string& isbn) const {
     return -1;
 }
 
-bool BookManager::is_ISBNExists(const std::string& isbn) const {
-    return findBookIndex(isbn) != -1;
-}
-
 // 添加图书
 bool BookManager::addBook(const Book& book) {
-    // 检查ISBN是否已存在
-    if (is_ISBNExists(book.getISBN())) {
-        return false;  // ISBN重复，添加失败
-    }
+    if (findIndex(book.getISBN()) != -1) {return false;}  // ISBN重复
     
     books.push_back(book);
     return true;
@@ -32,7 +25,7 @@ bool BookManager::addBook(const Book& book) {
 
 // 根据ISBN查找图书
 Book* BookManager::findByISBN(const std::string& isbn) {
-    int index = findBookIndex(isbn);
+    int index = findIndex(isbn);
     if (index != -1) {
         return &books[index];
     }
@@ -40,7 +33,7 @@ Book* BookManager::findByISBN(const std::string& isbn) {
 }
 
 const Book* BookManager::findByISBN(const std::string& isbn) const {
-    int index = findBookIndex(isbn);
+    int index = findIndex(isbn);
     if (index != -1) {
         return &books[index];
     }
@@ -112,13 +105,13 @@ std::vector<const Book*> BookManager::findByPublisher(const std::string& publish
 
 // 更新图书信息
 bool BookManager::updateBook(const std::string& isbn, const Book& newBook) {
-    int index = findBookIndex(isbn);
+    int index = findIndex(isbn);
     if (index == -1) {
         return false;  // 图书不存在
     }
     
     // 如果ISBN改变，检查新的ISBN是否已存在
-    if (newBook.getISBN() != isbn && is_ISBNExists(newBook.getISBN())) {
+    if (newBook.getISBN() != isbn  &&  findIndex(newBook.getISBN()) != -1) {
         return false;  // 新的ISBN已存在
     }
     
@@ -128,7 +121,7 @@ bool BookManager::updateBook(const std::string& isbn, const Book& newBook) {
 
 // 删除图书
 bool BookManager::deleteBook(const std::string& isbn) {
-    int index = findBookIndex(isbn);
+    int index = findIndex(isbn);
     if (index == -1) {
         return false;  // 图书不存在
     }

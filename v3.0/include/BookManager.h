@@ -9,15 +9,10 @@ class BookManager {
 private:
     std::vector<Book> books;
     // 查找图书索引
-    int findBookIndex(const std::string& isbn) const;
-    // 检查ISBN是否已存在
-    bool is_ISBNExists(const std::string& isbn) const;
+    int findIndex(const std::string& isbn) const;
 
 public:
-    // 构造函数
     BookManager();
-    
-    // 析构函数
     ~BookManager();
     
     // 添加图书
@@ -25,20 +20,17 @@ public:
     
     // 根据ISBN查找图书
     Book* findByISBN(const std::string& isbn);
-    const Book* findByISBN(const std::string& isbn) const;
-    
+    const Book* findByISBN(const std::string& isbn) const;  
     // 根据书名查找图书
     std::vector<Book*> findByTitle(const std::string& title);
     std::vector<const Book*> findByTitle(const std::string& title) const;
-    
     // 根据作者查找图书
     std::vector<Book*> findByAuthor(const std::string& author);
     std::vector<const Book*> findByAuthor(const std::string& author) const;
-    
     // 根据出版社查找图书
     std::vector<Book*> findByPublisher(const std::string& publisher);
     std::vector<const Book*> findByPublisher(const std::string& publisher) const;
-    
+
     // 更新图书信息
     bool updateBook(const std::string& isbn, const Book& newBook);
     
