@@ -3460,8 +3460,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z"
-      binary: "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z"
+      source: "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520"
+      binary: "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/clang-scan-deps.exe"
       CMAKE_C_FLAGS: ""
@@ -3471,19 +3471,19 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z'
+        Change Dir: 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520'
         
-        Run Build Command(s): C:/Users/86183/scoop/apps/cmake/current/bin/cmake.exe -E env VERBOSE=1 C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe -f Makefile cmTC_4c29c/fast
-        C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4c29c.dir\\build.make CMakeFiles/cmTC_4c29c.dir/build
-        mingw32-make[1]: Entering directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z'
-        Building C object CMakeFiles/cmTC_4c29c.dir/CMakeCCompilerABI.c.obj
-        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\cc.exe   -v -MD -MT CMakeFiles/cmTC_4c29c.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_4c29c.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles\\cmTC_4c29c.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\86183\\scoop\\apps\\cmake\\current\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c
+        Run Build Command(s): C:/Users/86183/scoop/apps/cmake/current/bin/cmake.exe -E env VERBOSE=1 C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe -f Makefile cmTC_6aba6/fast
+        C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6aba6.dir\\build.make CMakeFiles/cmTC_6aba6.dir/build
+        mingw32-make[1]: Entering directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520'
+        Building C object CMakeFiles/cmTC_6aba6.dir/CMakeCCompilerABI.c.obj
+        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\cc.exe   -v -MD -MT CMakeFiles/cmTC_6aba6.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_6aba6.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles\\cmTC_6aba6.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\86183\\scoop\\apps\\cmake\\current\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c
         clang version 21.1.8
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin
          (in-process)
-         "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/cc.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z -v -fcoverage-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z -resource-dir C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_4c29c.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_4c29c.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_4c29c.dir\\\\CMakeCCompilerABI.c.obj" -x c "C:\\\\Users\\\\86183\\\\scoop\\\\apps\\\\cmake\\\\current\\\\share\\\\cmake-4.2\\\\Modules\\\\CMakeCCompilerABI.c"
+         "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/cc.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520 -v -fcoverage-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520 -resource-dir C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_6aba6.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_6aba6.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_6aba6.dir\\\\CMakeCCompilerABI.c.obj" -x c "C:\\\\Users\\\\86183\\\\scoop\\\\apps\\\\cmake\\\\current\\\\share\\\\cmake-4.2\\\\Modules\\\\CMakeCCompilerABI.c"
         clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-w64-windows-gnu
         ignoring nonexistent directory "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include"
         ignoring nonexistent directory "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/usr/include"
@@ -3492,18 +3492,18 @@ events:
          C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include
          C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include
         End of search list.
-        Linking C executable cmTC_4c29c.exe
-        C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_4c29c.dir\\link.txt --verbose=1
+        Linking C executable cmTC_6aba6.exe
+        C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_6aba6.dir\\link.txt --verbose=1
         clang version 21.1.8
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin
-         "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_4c29c.exe C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/mingw/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_4c29c.dir/objects.a" --no-whole-archive --out-implib libcmTC_4c29c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtend.o
+         "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_6aba6.exe C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/mingw/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_6aba6.dir/objects.a" --no-whole-archive --out-implib libcmTC_6aba6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtend.o
         LLD 21.1.8 (https://github.com/msys2/MINGW-packages 767aeeb1886704d8277bc117676e8215f4115df5) (compatible with GNU linkers)
-        C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_4c29c.dir/objects.a
-        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\llvm-ar.exe qc CMakeFiles\\cmTC_4c29c.dir/objects.a @CMakeFiles\\cmTC_4c29c.dir\\objects1.rsp
-        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_4c29c.dir/objects.a -Wl,--no-whole-archive -o cmTC_4c29c.exe -Wl,--out-implib,libcmTC_4c29c.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z'
+        C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_6aba6.dir/objects.a
+        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\llvm-ar.exe qc CMakeFiles\\cmTC_6aba6.dir/objects.a @CMakeFiles\\cmTC_6aba6.dir\\objects1.rsp
+        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\cc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_6aba6.dir/objects.a -Wl,--no-whole-archive -o cmTC_6aba6.exe -Wl,--out-implib,libcmTC_6aba6.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520'
         
       exitCode: 0
   -
@@ -3534,19 +3534,19 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z']
+        ignore line: [Change Dir: 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/Users/86183/scoop/apps/cmake/current/bin/cmake.exe -E env VERBOSE=1 C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe -f Makefile cmTC_4c29c/fast]
-        ignore line: [C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_4c29c.dir\\build.make CMakeFiles/cmTC_4c29c.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z']
-        ignore line: [Building C object CMakeFiles/cmTC_4c29c.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\cc.exe   -v -MD -MT CMakeFiles/cmTC_4c29c.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_4c29c.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles\\cmTC_4c29c.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\86183\\scoop\\apps\\cmake\\current\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/Users/86183/scoop/apps/cmake/current/bin/cmake.exe -E env VERBOSE=1 C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe -f Makefile cmTC_6aba6/fast]
+        ignore line: [C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6aba6.dir\\build.make CMakeFiles/cmTC_6aba6.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520']
+        ignore line: [Building C object CMakeFiles/cmTC_6aba6.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\cc.exe   -v -MD -MT CMakeFiles/cmTC_6aba6.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_6aba6.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles\\cmTC_6aba6.dir\\CMakeCCompilerABI.c.obj -c C:\\Users\\86183\\scoop\\apps\\cmake\\current\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/cc.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z -v -fcoverage-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-ggxj8z -resource-dir C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_4c29c.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_4c29c.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_4c29c.dir\\\\CMakeCCompilerABI.c.obj" -x c "C:\\\\Users\\\\86183\\\\scoop\\\\apps\\\\cmake\\\\current\\\\share\\\\cmake-4.2\\\\Modules\\\\CMakeCCompilerABI.c"]
+        ignore line: [ "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/cc.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520 -v -fcoverage-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-r05520 -resource-dir C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_6aba6.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_6aba6.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_6aba6.dir\\\\CMakeCCompilerABI.c.obj" -x c "C:\\\\Users\\\\86183\\\\scoop\\\\apps\\\\cmake\\\\current\\\\share\\\\cmake-4.2\\\\Modules\\\\CMakeCCompilerABI.c"]
         ignore line: [clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-w64-windows-gnu]
         ignore line: [ignoring nonexistent directory "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include"]
         ignore line: [ignoring nonexistent directory "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/usr/include"]
@@ -3555,19 +3555,19 @@ events:
         ignore line: [ C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include]
         ignore line: [ C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_4c29c.exe]
-        ignore line: [C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_4c29c.dir\\link.txt --verbose=1]
+        ignore line: [Linking C executable cmTC_6aba6.exe]
+        ignore line: [C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_6aba6.dir\\link.txt --verbose=1]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin]
-        link line: [ "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_4c29c.exe C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/mingw/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_4c29c.dir/objects.a" --no-whole-archive --out-implib libcmTC_4c29c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtend.o]
+        link line: [ "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_6aba6.exe C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/mingw/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_6aba6.dir/objects.a" --no-whole-archive --out-implib libcmTC_6aba6.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtend.o]
           arg [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_4c29c.exe] ==> ignore
+          arg [cmTC_6aba6.exe] ==> ignore
           arg [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o] ==> obj [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o]
           arg [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o] ==> obj [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o]
           arg [-LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib] ==> dir [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib]
@@ -3576,10 +3576,10 @@ events:
           arg [-LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows] ==> dir [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\\\cmTC_4c29c.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\\\cmTC_6aba6.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_4c29c.dll.a] ==> ignore
+          arg [libcmTC_6aba6.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -3636,8 +3636,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw"
-      binary: "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw"
+      source: "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk"
+      binary: "D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -3648,19 +3648,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw'
+        Change Dir: 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk'
         
-        Run Build Command(s): C:/Users/86183/scoop/apps/cmake/current/bin/cmake.exe -E env VERBOSE=1 C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe -f Makefile cmTC_60baf/fast
-        C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_60baf.dir\\build.make CMakeFiles/cmTC_60baf.dir/build
-        mingw32-make[1]: Entering directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw'
-        Building CXX object CMakeFiles/cmTC_60baf.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\c++.exe   -v -MD -MT CMakeFiles/cmTC_60baf.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_60baf.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles\\cmTC_60baf.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\Users\\86183\\scoop\\apps\\cmake\\current\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/Users/86183/scoop/apps/cmake/current/bin/cmake.exe -E env VERBOSE=1 C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe -f Makefile cmTC_d03e0/fast
+        C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d03e0.dir\\build.make CMakeFiles/cmTC_d03e0.dir/build
+        mingw32-make[1]: Entering directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk'
+        Building CXX object CMakeFiles/cmTC_d03e0.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\c++.exe   -v -MD -MT CMakeFiles/cmTC_d03e0.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_d03e0.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles\\cmTC_d03e0.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\Users\\86183\\scoop\\apps\\cmake\\current\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp
         clang version 21.1.8
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin
          (in-process)
-         "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/c++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw -v -fcoverage-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw -resource-dir C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_60baf.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_60baf.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1 -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_60baf.dir\\\\CMakeCXXCompilerABI.cpp.obj" -x c++ "C:\\\\Users\\\\86183\\\\scoop\\\\apps\\\\cmake\\\\current\\\\share\\\\cmake-4.2\\\\Modules\\\\CMakeCXXCompilerABI.cpp"
+         "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/c++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk -v -fcoverage-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk -resource-dir C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_d03e0.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_d03e0.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1 -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_d03e0.dir\\\\CMakeCXXCompilerABI.cpp.obj" -x c++ "C:\\\\Users\\\\86183\\\\scoop\\\\apps\\\\cmake\\\\current\\\\share\\\\cmake-4.2\\\\Modules\\\\CMakeCXXCompilerABI.cpp"
         clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-w64-windows-gnu
         ignoring nonexistent directory "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include/c++/v1"
         ignoring nonexistent directory "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include"
@@ -3671,18 +3671,18 @@ events:
          C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include
          C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include
         End of search list.
-        Linking CXX executable cmTC_60baf.exe
-        C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_60baf.dir\\link.txt --verbose=1
+        Linking CXX executable cmTC_d03e0.exe
+        C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_d03e0.dir\\link.txt --verbose=1
         clang version 21.1.8
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin
-         "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_60baf.exe C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/mingw/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_60baf.dir/objects.a" --no-whole-archive --out-implib libcmTC_60baf.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtend.o
+         "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_d03e0.exe C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/mingw/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_d03e0.dir/objects.a" --no-whole-archive --out-implib libcmTC_d03e0.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtend.o
         LLD 21.1.8 (https://github.com/msys2/MINGW-packages 767aeeb1886704d8277bc117676e8215f4115df5) (compatible with GNU linkers)
-        C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_60baf.dir/objects.a
-        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\llvm-ar.exe qc CMakeFiles\\cmTC_60baf.dir/objects.a @CMakeFiles\\cmTC_60baf.dir\\objects1.rsp
-        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_60baf.dir/objects.a -Wl,--no-whole-archive -o cmTC_60baf.exe -Wl,--out-implib,libcmTC_60baf.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw'
+        C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_d03e0.dir/objects.a
+        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\llvm-ar.exe qc CMakeFiles\\cmTC_d03e0.dir/objects.a @CMakeFiles\\cmTC_d03e0.dir\\objects1.rsp
+        C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_d03e0.dir/objects.a -Wl,--no-whole-archive -o cmTC_d03e0.exe -Wl,--out-implib,libcmTC_d03e0.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk'
         
       exitCode: 0
   -
@@ -3715,19 +3715,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw']
+        ignore line: [Change Dir: 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/Users/86183/scoop/apps/cmake/current/bin/cmake.exe -E env VERBOSE=1 C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe -f Makefile cmTC_60baf/fast]
-        ignore line: [C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_60baf.dir\\build.make CMakeFiles/cmTC_60baf.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw']
-        ignore line: [Building CXX object CMakeFiles/cmTC_60baf.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\c++.exe   -v -MD -MT CMakeFiles/cmTC_60baf.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_60baf.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles\\cmTC_60baf.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\Users\\86183\\scoop\\apps\\cmake\\current\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/Users/86183/scoop/apps/cmake/current/bin/cmake.exe -E env VERBOSE=1 C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe -f Makefile cmTC_d03e0/fast]
+        ignore line: [C:/Users/86183/scoop/apps/msys2/current/clang64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_d03e0.dir\\build.make CMakeFiles/cmTC_d03e0.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d03e0.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\Users\\86183\\scoop\\apps\\msys2\\current\\clang64\\bin\\c++.exe   -v -MD -MT CMakeFiles/cmTC_d03e0.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_d03e0.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles\\cmTC_d03e0.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\Users\\86183\\scoop\\apps\\cmake\\current\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin]
         ignore line: [ (in-process)]
-        ignore line: [ "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/c++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw -v -fcoverage-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-xdndjw -resource-dir C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_60baf.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_60baf.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1 -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_60baf.dir\\\\CMakeCXXCompilerABI.cpp.obj" -x c++ "C:\\\\Users\\\\86183\\\\scoop\\\\apps\\\\cmake\\\\current\\\\share\\\\cmake-4.2\\\\Modules\\\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [ "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/c++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk -v -fcoverage-compilation-dir=D:/Documents/NEUQ/CurriculumDesign/BMS/v3.0/build/CMakeFiles/CMakeScratch/TryCompile-g58fbk -resource-dir C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21 -dependency-file "CMakeFiles\\\\cmTC_d03e0.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_d03e0.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include/c++/v1 -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1 -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/usr/include -internal-isystem C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o "CMakeFiles\\\\cmTC_d03e0.dir\\\\CMakeCXXCompilerABI.cpp.obj" -x c++ "C:\\\\Users\\\\86183\\\\scoop\\\\apps\\\\cmake\\\\current\\\\share\\\\cmake-4.2\\\\Modules\\\\CMakeCXXCompilerABI.cpp"]
         ignore line: [clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-w64-windows-gnu]
         ignore line: [ignoring nonexistent directory "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include/c++/v1"]
         ignore line: [ignoring nonexistent directory "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/include"]
@@ -3738,19 +3738,19 @@ events:
         ignore line: [ C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/include]
         ignore line: [ C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_60baf.exe]
-        ignore line: [C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_60baf.dir\\link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_d03e0.exe]
+        ignore line: [C:\\Users\\86183\\scoop\\apps\\cmake\\current\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_d03e0.dir\\link.txt --verbose=1]
         ignore line: [clang version 21.1.8]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin]
-        link line: [ "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_60baf.exe C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/mingw/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_60baf.dir/objects.a" --no-whole-archive --out-implib libcmTC_60baf.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtend.o]
+        link line: [ "C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_d03e0.exe C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/mingw/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib -LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows -v --whole-archive "CMakeFiles\\\\cmTC_d03e0.dir/objects.a" --no-whole-archive --out-implib libcmTC_d03e0.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows/libclang_rt.builtins-x86_64.a -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtend.o]
           arg [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/bin/ld.lld] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_60baf.exe] ==> ignore
+          arg [cmTC_d03e0.exe] ==> ignore
           arg [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o] ==> obj [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crt2.o]
           arg [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o] ==> obj [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/crtbegin.o]
           arg [-LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib] ==> dir [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/x86_64-w64-mingw32/lib]
@@ -3759,10 +3759,10 @@ events:
           arg [-LC:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows] ==> dir [C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/lib/clang/21/lib/windows]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\\\cmTC_60baf.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\\\cmTC_d03e0.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_60baf.dll.a] ==> ignore
+          arg [libcmTC_d03e0.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore

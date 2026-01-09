@@ -7,8 +7,8 @@ SaleSys::~SaleSys() {}
 bool SaleSys::purchaseBook(const std::string& isbn, int quantity) {
     Book* book = bookManager->findByISBN(isbn);
     // 猜测可能会有2种找茬的情况，让我来解决一下
-    if (!book) {return false; }                 // 图书不存在
-    if (isSuft(book, quantity)) {return false;} // 库存不足，或购买数量为负
+    if (! book) {return false; }                 // 图书不存在
+    if (! isSuft(book, quantity)) {return false;} // 库存不足，或购买数量为负
     
     book->setStock(book->getStock() - quantity);
     return true;
