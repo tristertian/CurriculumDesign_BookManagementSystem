@@ -58,10 +58,11 @@ private:
     void setupUI();
     void setupCallbacks();  // 设置回调函数
     void updateTable();  // 更新表格显示
-    void clearInputs();  // 清空输入框
     void showMessage(const std::string& message);  // 显示消息
     void showError(const std::string& message);    // 显示错误
     void selectBook(int row);  // 选择图书
+    void clearInputs();  // 清空输入框
+
     
     // 回调函数（对接功能函数）
     static void onAddBook(Fl_Widget* w, void* data);

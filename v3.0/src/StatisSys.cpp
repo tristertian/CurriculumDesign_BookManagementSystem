@@ -27,11 +27,10 @@ std::vector<Book*> StatisSys::getBooksByPublisher(const std::string& publisher) 
     return bookManager->findByPublisher(publisher);
 }
 
-// 按价格统计（从大到小）
+// 按价格/库存量降序统计
 std::vector<Book*> StatisSys::getBooksSortedByPrice() {
     return bookManager->sortByPrice();
 }
-// 按库存量统计（从大到小）
 std::vector<Book*> StatisSys::getBooksSortedByStock() {
     return bookManager->sortByStock();
 }

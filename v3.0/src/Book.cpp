@@ -1,5 +1,6 @@
 #include "../include/Book.h"
 #include <sstream>
+#include <iomanip>
 
 Book::Book() : stock(0), price(0.0) {}
 
@@ -48,11 +49,13 @@ void Book::setPrice(double newPrice)                    {price = newPrice;}
 std::string Book::toString() const {
     std::stringstream s;
     s <<"ISBN: "<<isbn<<", 书名: "<<title<<", 作者: "<<author
-      <<", 出版社: "<<publisher<<", 库存: "<<stock<<", 价格: ¥"<<price;
+      <<", 出版社: "<<publisher<<", 库存: "<<stock
+      <<", 价格: ¥"<<std::fixed<<std::setprecision(2)<<price;
     return s.str();
 }
 
-// STAR: binary read&write
+
+/* STAR: binary read&write */
 // ===binary write===
 std::ostream& operator<<(std::ostream& os, const Book& book) {
     // ISBN(长度 + 字符串)
@@ -78,7 +81,7 @@ std::ostream& operator<<(std::ostream& os, const Book& book) {
     return os;
 }
 
-// ===binary read===
+// ===STAR: binary read===
 std::istream& operator>>(std::istream& is, Book& book) {
     // ISBN
     int isbnLen;

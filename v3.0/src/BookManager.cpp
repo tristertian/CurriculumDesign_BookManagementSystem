@@ -164,11 +164,6 @@ bool BookManager::saveFile(const std::string& filename){
 
     if (!file) {return false;}  // 失败1
     try {
-        // const char* magic = "BMS\0";    // 文件头
-        // file.write(magic, 4);
-        // int version = 1;                // 版本号
-        // file.write(reinterpret_cast<const char*>(&version), sizeof(version));
-
         int amount = static_cast<int>(books.size());    // 图书总数
         file.write(reinterpret_cast<const char*>(&amount), sizeof(amount));
         
@@ -194,22 +189,6 @@ bool BookManager::loadFile(const std::string& filename) {
 
     if (!file) {return false;}
     try {
-        // // 读取文件头
-        // char magic[4];
-        // file.read(magic, 4);
-        // if (std::string(magic, 4) != "BMS\0") {
-        //     file.close();
-        //     return false;  // 文件格式错误
-        // }
-        
-        // // 读取版本号
-        // int version;
-        // file.read(reinterpret_cast<char*>(&version), sizeof(version));
-        // if (version != 1) {
-        //     file.close();
-        //     return false;  // 版本不匹配
-        // }
-        
         // 读取图书数量
         int amount;
         file.read(reinterpret_cast<char*>(&amount), sizeof(amount));

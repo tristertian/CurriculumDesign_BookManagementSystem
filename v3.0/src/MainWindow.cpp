@@ -262,7 +262,8 @@ void MainWindow::showError(const std::string& message) {
     resultBuffer->text((std::string("错误: ") + message).c_str());
 }
 
-// 选择图书
+/*=========================================================================*/
+// STAR:选择图书
 void MainWindow::selectBook(int row) {
     auto& books = bookManager->getAllBooks();
     if (row >= 0 && row < static_cast<int>(books.size())) {
@@ -277,6 +278,7 @@ void MainWindow::selectBook(int row) {
         priceInput->value(std::to_string(book.getPrice()).c_str());
     }
 }
+/*==========================================================================*/
 
 // 回调函数实现
 void MainWindow::onAddBook(Fl_Widget* w, void* data) {
@@ -378,19 +380,26 @@ void MainWindow::handleSearchBook() {
     }
     
     std::string result = "查询结果：\n";
-    auto books = bookManager->findByTitle(keyword);
-    if (!books.empty()) {
-        result += "按书名找到 " + std::to_string(books.size()) + " 本图书\n";
+    auto booksByTitle = bookManager->findByTitle(keyword);
+    if (!booksByTitle.empty()) {
+        result += "按书名找到 " + std::to_string(booksByTitle.size()) + " 本图书\n";
+        for (const auto it : booksByTitle) {
+            result += it->toString() + '\n';
+        }
     }
-    
     auto booksByAuthor = bookManager->findByAuthor(keyword);
     if (!booksByAuthor.empty()) {
         result += "按作者找到 " + std::to_string(booksByAuthor.size()) + " 本图书\n";
+        for (const auto it : booksByAuthor) {
+            result += it->toString() + '\n';
+        }
     }
-    
     auto booksByPublisher = bookManager->findByPublisher(keyword);
     if (!booksByPublisher.empty()) {
         result += "按出版社找到 " + std::to_string(booksByPublisher.size()) + " 本图书\n";
+        for (const auto it : booksByPublisher) {
+            result += it->toString() + '\n';
+        }
     }
     
     showMessage(result);
@@ -399,7 +408,7 @@ void MainWindow::handleSearchBook() {
 // 处理修改图书
 void MainWindow::handleUpdateBook() {
     if (selectedISBN.empty()) {
-        showError("请先选择要修改的图书");
+        showError("请从表格中选择要修改的图书");
         return;
     }
     
@@ -526,11 +535,12 @@ void MainWindow::handleSave() {
 void MainWindow::handleLoad() {
     if (bookManager->loadFile("../data/books.dat")) {
         updateTable();
-        showMessage("数据加载成功！\n共加载 " + 
-                   std::to_string(bookManager->getBookAmount()) + " 本图书");
+        showMessage("加载成功！\n共加载 " + std::to_string(bookManager->getBookAmount()) + " 本书");
     } else {
-        showError("数据加载失败！文件不存在或格式错误");
+        showError("加载失败！文件不存在");
     }
 }
 
-void MainWindow::show() {updateTable();Fl_Window::show();}
+void MainWindow::show() {
+    updateTable();  Fl_Window::show();
+}

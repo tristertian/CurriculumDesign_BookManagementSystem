@@ -657,4 +657,5 @@ CMakeFiles/BMS.dir/src/Book.cpp.obj: \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__vector/vector_bool.h \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/stack \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__fwd/stack.h \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/print
+  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/print \
+  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/iomanip
