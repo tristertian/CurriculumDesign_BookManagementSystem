@@ -701,4 +701,5 @@ CMakeFiles/BMS.dir/src/MainWindow.cpp.obj: \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/stack \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/__fwd/stack.h \
   C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/print \
-  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/iomanip
+  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/iomanip \
+  C:/Users/86183/scoop/apps/msys2/2025-12-13/clang64/include/c++/v1/iostream

@@ -5,8 +5,9 @@
 #include <FL/Fl_Box.H>
 #include <sstream>
 #include <iomanip>
+#include <iostream>
 
-// 表格类定义
+// 做一个表格类，直观呈现Book容器的内容，方便进行点击选择
 class BookTable : public Fl_Table_Row {
 private:
     MainWindow* mainWindow;
@@ -90,7 +91,6 @@ public:
     }
 };
 
-// 构造函数
 MainWindow::MainWindow(int width, int height, const char* title) 
     : Fl_Window(width, height, title), selectedISBN("") {
     
@@ -107,8 +107,6 @@ MainWindow::MainWindow(int width, int height, const char* title)
     resizable(this);
     size_range(800, 600);
 }
-
-// 析构函数
 MainWindow::~MainWindow() {
     delete saleSys;
     delete statsSystem;
@@ -119,13 +117,11 @@ MainWindow::~MainWindow() {
 void MainWindow::setupUI() {
     // 左侧面板
     Fl_Group* leftPanel = new Fl_Group(10, 10, 380, 580);
-    
     // 标题
     Fl_Box* titleBox = new Fl_Box(10, 10, 380, 30, "图书信息管理");
     titleBox->labelfont(FL_BOLD);
     titleBox->labelsize(16);
     titleBox->align(FL_ALIGN_CENTER);
-    
     // 输入框标签和输入框
     int y = 50;
     Fl_Box* isbnLabel = new Fl_Box(10, y, 80, 25, "ISBN:");
@@ -157,12 +153,11 @@ void MainWindow::setupUI() {
     priceLabel->align(FL_ALIGN_RIGHT | FL_ALIGN_INSIDE);
     priceInput = new Fl_Input(95, y, 280, 25);
     
-    // 操作按钮
     y += 40;
-    addButton = new Fl_Button(20, y, 80, 30, "添加图书");
-    updateButton = new Fl_Button(110, y, 80, 30, "修改图书");
-    deleteButton = new Fl_Button(200, y, 80, 30, "删除图书");
-    clearButton = new Fl_Button(290, y, 80, 30, "清空输入");
+    addButton = new Fl_Button(20, y, 80, 30, "添加");
+    updateButton = new Fl_Button(110, y, 80, 30, "修改");
+    deleteButton = new Fl_Button(200, y, 80, 30, "删除");
+    clearButton = new Fl_Button(290, y, 80, 30, "清空");
     
     // 购买功能
     y += 50;
@@ -186,7 +181,7 @@ void MainWindow::setupUI() {
     // 数据操作按钮
     y += 50;
     saveButton = new Fl_Button(20, y, 80, 30, "保存数据");
-    loadButton = new Fl_Button(110, y, 80, 30, "加载数据");
+    loadButton = new Fl_Button(110, y, 80, 30, "读取数据");
     statsButton = new Fl_Button(200, y, 80, 30, "统计信息");
     
     leftPanel->end();
@@ -221,7 +216,6 @@ void MainWindow::setupUI() {
     end();
 }
 
-// 设置回调函数
 void MainWindow::setupCallbacks() {
     addButton->callback(onAddBook, this);
     updateButton->callback(onUpdateBook, this);
@@ -233,7 +227,7 @@ void MainWindow::setupCallbacks() {
     saveButton->callback(onSaveData, this);
     loadButton->callback(onLoadData, this);
     
-    bookTable->callback(onTableSelect);
+    bookTable->callback(onTableSelect, this);
     bookTable->when(FL_WHEN_CHANGED);
 }
 
@@ -244,7 +238,7 @@ void MainWindow::updateTable() {
     bookTable->redraw();
 }
 
-// 清空输入框
+// 清空输入框（细节优化）
 void MainWindow::clearInputs() {
     isbnInput->value("");
     titleInput->value("");
@@ -259,7 +253,7 @@ void MainWindow::clearInputs() {
 }
 
 // 显示消息
-void MainWindow::showMessage(const std::string& message) {
+void MainWindow::showMessage(const std::string& message){
     resultBuffer->text(message.c_str());
 }
 
@@ -347,12 +341,10 @@ void MainWindow::handleAddBook() {
     const char* stockStr = stockInput->value();
     const char* priceStr = priceInput->value();
     
-    // 验证输入
     if (!isbn || !title || !author || !publisher || !stockStr || !priceStr) {
         showError("请填写所有必填字段");
         return;
     }
-    
     int stock = std::atoi(stockStr);
     double price = std::atof(priceStr);
     
@@ -367,7 +359,6 @@ void MainWindow::handleAddBook() {
     }
     
     Book book(title, publisher, isbn, author, stock, price);
-    
     if (bookManager->addBook(book)) {
         updateTable();
         clearInputs();
@@ -505,36 +496,18 @@ void MainWindow::handleStatistics() {
     
     ss << "图书种类: " << statsSystem->getTotalBooks() << " 种\n";
     ss << "总库存量: " << statsSystem->getTotalStock() << " 本\n";
-    ss << "库存总价值: ¥" << std::fixed << std::setprecision(2) 
-       << statsSystem->getTotalValue() << "\n";
-    ss << "平均价格: ¥" << std::fixed << std::setprecision(2) 
-       << statsSystem->getAveragePrice() << "\n\n";
     
-    // 最贵图书
-    Book* mostExpensive = statsSystem->getMostExpensiveBook();
-    if (mostExpensive) {
-        ss << "最贵图书: " << mostExpensive->getTitle() 
-           << " (¥" << mostExpensive->getPrice() << ")\n";
-    }
-    
-    // 库存最多图书
-    Book* highestStock = statsSystem->getHighestStockBook();
-    if (highestStock) {
-        ss << "库存最多: " << highestStock->getTitle() 
-           << " (" << highestStock->getStock() << " 本)\n";
-    }
-    
-    ss << "\n=== 价格排行榜（前5名）===\n";
+    ss << "\n↓按价格排序\n";
     auto sortedByPrice = statsSystem->getBooksSortedByPrice();
-    for (size_t i = 0; i < sortedByPrice.size() && i < 5; ++i) {
+    for (size_t i = 0; i < sortedByPrice.size(); ++i) {
         Book* book = sortedByPrice[i];
         ss << (i + 1) << ". " << book->getTitle() 
            << " - ¥" << book->getPrice() << "\n";
     }
     
-    ss << "\n=== 库存排行榜（前5名）===\n";
+    ss << "\n↓按库存排序\n";
     auto sortedByStock = statsSystem->getBooksSortedByStock();
-    for (size_t i = 0; i < sortedByStock.size() && i < 5; ++i) {
+    for (size_t i = 0; i < sortedByStock.size(); ++i) {
         Book* book = sortedByStock[i];
         ss << (i + 1) << ". " << book->getTitle() 
            << " - " << book->getStock() << " 本\n";
@@ -542,17 +515,14 @@ void MainWindow::handleStatistics() {
     
     showMessage(ss.str());
 }
-
-// 处理保存数据
+// 二进制文件存储
 void MainWindow::handleSave() {
     if (bookManager->saveFile("../data/books.dat")) {
-        showMessage("数据保存成功！\n文件位置: data/books.dat");
+        showMessage("数据保存成功！\n文件位置: ../data/books.dat");
     } else {
         showError("数据保存失败！");
     }
 }
-
-// 处理加载数据
 void MainWindow::handleLoad() {
     if (bookManager->loadFile("../data/books.dat")) {
         updateTable();
@@ -563,8 +533,4 @@ void MainWindow::handleLoad() {
     }
 }
 
-// 显示窗口
-void MainWindow::show() {
-    updateTable();
-    Fl_Window::show();
-}
+void MainWindow::show() {updateTable();Fl_Window::show();}

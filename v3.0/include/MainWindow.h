@@ -48,16 +48,14 @@ private:
     Fl_Text_Buffer* resultBuffer;
     Fl_Table_Row* bookTable;
     
-    // 当前选中图书的ISBN
-    std::string selectedISBN;
+    std::string selectedISBN;   // 当前选中图书的ISBN
     
 public:
     // 获取图书管理器（供表格类使用）
     BookManager* getBookManager() { return bookManager; }
     
 private:
-    // 私有方法
-    void setupUI();  // 设置UI界面
+    void setupUI();
     void setupCallbacks();  // 设置回调函数
     void updateTable();  // 更新表格显示
     void clearInputs();  // 清空输入框
@@ -65,7 +63,7 @@ private:
     void showError(const std::string& message);    // 显示错误
     void selectBook(int row);  // 选择图书
     
-    // 回调函数
+    // 回调函数（对接功能函数）
     static void onAddBook(Fl_Widget* w, void* data);
     static void onSearchBook(Fl_Widget* w, void* data);
     static void onUpdateBook(Fl_Widget* w, void* data);
@@ -82,31 +80,14 @@ public:
     MainWindow(int width, int height, const char* title);
     ~MainWindow();
     
-    // 显示窗口
     void show();
-    
-    // 处理添加图书
     void handleAddBook();
-    
-    // 处理查询图书
     void handleSearchBook();
-    
-    // 处理修改图书
     void handleUpdateBook();
-    
-    // 处理删除图书
     void handleDeleteBook();
-    
-    // 处理购买图书
     void handlePurchaseBook();
-    
-    // 处理统计显示
     void handleStatistics();
-    
-    // 处理保存数据
     void handleSave();
-    
-    // 处理加载数据
     void handleLoad();
 };
 
